@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-29",
+  "parameters": {
+    "gain": 0.375,
+    "max_back_deg": 4.0,
+    "deadband_deg": 1.0
+  },
+  "scope": "Supervised short-distance demonstration; not robust autonomous walking",
+  "measurement": "Latest panel record; video and controller have no hardware clock synchronization",
+  "ballot": "Ballast field in UI was none; video shows rear blocks, so this field is not a verified physical inventory",
+  "controller": "Recorded sent-target prefix with live relative-pitch correction of ID11 only; no ONNX evaluation during this run",
+  "source_frames": 250,
+  "total_frames": 400,
+  "prepare_frames": 150,
+  "action_frames": 100,
+  "return_frames": 100,
+  "hold_frames": 50,
+  "video": "milestone-20260929.mp4",
+  "record_id": "43f082d41a424bf0a6cb60bd81f0657b"
+}
