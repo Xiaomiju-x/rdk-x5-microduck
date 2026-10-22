@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-23",
+  "scope": "This RDK prototype's onboard short-forward demonstration; not a portable robot calibration",
+  "controller": "D_NECK_EARLY_RETURN_20261023",
+  "parameters": {
+    "gain": 0.0,
+    "max_back_deg": 4.0,
+    "deadband_deg": 1.0,
+    "bias_deg": 0.0,
+    "back_gain": 0.0,
+    "max_front_deg": 4.0,
+    "motion_deg": -30.0,
+    "start_hold_s": 0.0,
+    "transition_s": 0.2,
+    "return_advance_s": 1.1,
+    "neck_mode": "two_stage_pose"
+  },
+  "automatic_hardware_execution": false,
+  "nominal_rate_hz": 50,
+  "neck_return_start_frame_zero_based": 195,
+  "neck_return_duration_frames": 100,
+  "frames_total": 400,
+  "actual_distance_measured": false,
+  "video_controller_clock_synchronized": false
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Public compressed media, original capture order and playback speed retained",
+  "files": {
+    "media/20261023/onboard-front.jpg": "a0309de026b4fced78dc10f0e478446c9f199fc67c7f89ece43ad152f68e94f6",
+    "media/20261023/onboard-short-walk.mp4": "ced180444dd84368eb2b96cc62dc9294be9ece1dc3d46221ad354adb4c3b543f",
+    "media/20261023/onboard-side.jpg": "50b9338084db56dd7d0243298d6df7e821e7f81aa16f275ddcc6fdad100e2179"
+  },
+  "original_video_duration_s": 13.256531,
+  "public_video_duration_s": 13.24644,
+  "note": "约10毫秒的封装/帧采样时长差，不是动作剪辑；未加速或慢放。照片和视频已清理定位等原始元数据。"
+}
