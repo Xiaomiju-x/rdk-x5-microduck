@@ -1,0 +1,15 @@
+'use strict';
+const $=id=>document.getElementById(id);let token='',parameters={},cycles=1,busy=false,lastMarker='';
+const keys=['bias_deg','motion_deg','return_advance_s','transition_s','start_hold_s','gain','back_gain','max_back_deg','max_front_deg','deadband_deg'];
+async function api(path,value){const opts=value===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-Control-Token':token},body:JSON.stringify(value)};const r=await fetch(path,opts);const data=await r.json();if(!r.ok)throw Error(data.error||r.statusText);return data;}
+function params(){const out={...parameters,neck_mode:'two_stage_pose'};for(const key of keys)out[key]=Number($(key).value);return out;}
+function error(e){$('status').textContent=e.message||String(e);}
+function renderParameters(p){parameters=p;for(const key of keys)$(key).value=p[key];}
+function chosen(n){cycles=n;document.querySelectorAll('[data-cycle]').forEach(b=>b.classList.toggle('selected',Number(b.dataset.cycle)===n));$('run').textContent=n===1?'运行 D · 单轮':`运行 D · 连续 ${n} 轮`;$('onsite').checked=false;}
+async function poll(){try{const s=await api('/api/status');busy=s.busy;for(const id of ['run','restore','partial','inspect','save'])$(id).disabled=busy;document.querySelectorAll('[data-cycle],.grid input').forEach(e=>e.disabled=busy);const j=s.current;if(!j)return;const p=j.progress||{};const labels={running:'执行中',completed:'执行完成 · 请现场判断是否站稳',stopped:'已停止发目标',failed:'任务中止 · 请查看记录'};$('status').textContent=labels[j.status]||j.status;const frame=p.global_frame||p.frame||0,total=p.global_total||p.total||1;$('progress').value=100*frame/total;$('progressText').textContent=(p.cycle?`第 ${p.cycle}/${p.cycles} 轮 · `:'')+`${frame}/${total} 帧 · ${p.phase||j.action}`;if(p.seconds)$('progressText').textContent=`将在 ${p.seconds} 秒后慢复位，请继续托稳`;$('detail').textContent=JSON.stringify(j,null,2);const marker=j.id+':'+j.status;if(lastMarker!==marker){$('onsite').checked=false;$('supported').checked=false;lastMarker=marker;}}catch(e){error(e);}}
+async function start(action){try{const request={action,cycles:action==='run'?cycles:1,parameters:params(),onsite_ready:$('onsite').checked,supported:$('supported').checked};await api('/api/action',request);await poll();}catch(e){error(e);}}
+document.querySelectorAll('[data-cycle]').forEach(b=>b.onclick=()=>chosen(Number(b.dataset.cycle)));
+$('run').onclick=()=>start('run');$('restore').onclick=()=>start('restore');$('partial').onclick=()=>start('partial_restore');$('inspect').onclick=()=>start('inspect');
+$('stop').onclick=async()=>{try{await api('/api/stop',{});await poll();}catch(e){error(e);}};
+$('save').onclick=async()=>{try{const r=await api('/api/save',{parameters:params()});renderParameters(r.parameters);$('status').textContent='参数已保存 · 没有发动作';}catch(e){error(e);}};
+(async()=>{try{const c=await api('/api/config');token=c.token;renderParameters(c.parameters);$('mode').textContent=c.demo?'DEMO · 无硬件':'X5 本地执行 · 显式运行';chosen(1);$('supported').checked=false;await poll();setInterval(poll,700);}catch(e){error(e);}})();

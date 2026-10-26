@@ -1,0 +1,2 @@
+# Published trajectory/source evidence uses byte hashes. Preserve exact bytes.
+* -text

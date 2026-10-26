@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "model": "FT_HD1910M_15",
+  "servo_port": "SET_SERVO_PORT",
+  "imu_port": "SET_IMU_PORT",
+  "servo_baud": 1000000,
+  "imu_baud": 115200,
+  "start": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null,
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null
+  },
+  "expected_offsets_raw": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null,
+    "10": null,
+    "11": null,
+    "12": null,
+    "13": null,
+    "14": null,
+    "15": null
+  },
+  "expected_mode": 4,
+  "directions_verified": false,
+  "start_pose_verified": false,
+  "imu_mount_verified": false,
+  "body_from_sensor_rotation": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ]
+}

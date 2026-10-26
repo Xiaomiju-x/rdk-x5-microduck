@@ -1,0 +1,11 @@
+{
+  "extraction_version": "D_PUBLIC_20261026",
+  "trajectory_frames": 400,
+  "trajectory_sha256": "ba6e30ce15b34cd45f0b4ccc4eec8e2fa1f4902ad17f7462b1804de9bb99be6b",
+  "reference_profile_sha256": "a50af8d0f6a87c1ddc98833ef72c1ad96ba6399342a9ceb3379c0d5b37598483",
+  "original_neck_sha256": "e24b00bd8087966398fe1e3d78bb69939b52c7a5e58a747f402e2c5f773fc574",
+  "neck_changes": "Import paths only; algorithm body identical.",
+  "upstream_bus_url": "https://github.com/fanhao375/microduck-replica/blob/master/tools/servo-web/feetech.py",
+  "upstream_bus_sha256": "6523fcf728393f9f185edbc6760a538474b8a009e298f2444849b0c4558dad9a",
+  "hardware_validation": "Original integration: single-cycle prototype demonstration. This portable package: offline validation only; no new hardware run."
+}

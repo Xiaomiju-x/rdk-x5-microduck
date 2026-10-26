@@ -1,8 +1,10 @@
 # 来源、许可与发布范围
 
+更新：2026-10-26。当前运行入口为`software/`，机载改件为`mechanical/`。根目录旧模块和9月29日ZIP保留历史归属；不同类别资源按下述许可分别使用。
+
 ## 本项目新增代码
 
-本仓库及源码ZIP中由本项目新增的Python/JS/HTML/CSS代码按Apache License 2.0公开，见 `LICENSE`。整理版对具体地址、路径和设备标识做了脱敏，并为公开面板设置DEMO默认边界；不修改本机正在使用的调试控制器。
+本仓库及源码ZIP中由本项目新增的Python/JS/HTML/CSS代码按Apache License 2.0公开，见 `LICENSE`。最新公开包提取了D相对目标、颈部时序和硬件执行流程，将地址、串口、站姿与安装角改为逐机配置。公开面板默认DEMO；本次整理不修改本机正在使用的调试控制器。
 
 原创项目说明文字同样适用Apache-2.0。实拍视频仅作为本项目研究/复现记录，按CC BY-NC-SA 4.0分享，署名“RDK X5 MicroDuck 项目 / CanNyCat”。涉及第三方外观与品牌的权利不由本许可授予，不意味着可据此销售上游产品。
 
@@ -11,11 +13,17 @@
 |来源|复用关系|本次处理|
 |---|---|---|
 |Pollen Robotics microduck / microduck_rl|机器人、仿真和策略生态|链接到官方，不重新打包权重或模型|
-|机械行者Robo / fanhao375 microduck-replica-cad|本机FT结构与装配参考|按上游CC BY-NC-SA 4.0保留署名；完整CAD、作者图纸和G-code不重新打包|
-|fanhao375 microduck-replica|复刻资料及总线工具|ZIP内reference_feetech.py保留原文件内容，属于上游tools代码Apache-2.0范围|
+|机械行者Robo / fanhao375 microduck-replica-cad|本机FT结构与装配参考|完整本体与SolidWorks源件给上游入口；本包提供FT接口衍生的R8A改件和两只原形状脚垫，按CC BY-NC-SA 4.0保留署名与修改说明|
+|fanhao375 microduck-replica|复刻资料及总线工具|旧ZIP内reference_feetech.py及新software/vendor/feetech.py保留上游归属，附Apache-2.0许可；来源与文件核对见software文档|
 |Rhoban Placo / Open Duck reference motion generator|常规运动学路线参考|只给入口，不宣称本阶段运行了自己的新训练|
 
 CAD仓库版本及素材许可证应在下载时再次核对。源模型和作者图纸不是本项目原创，个人GitHub发布不改变其非商业性/相同方式共享条件。需要其他使用范围时应另行向权利人确认。
+
+## 本次机械与图解
+
+`mechanical/`中的CAD、STEP、STL、3MF及其几何图采用CC BY-NC-SA 4.0。L1保留FT底座接口，属于衍生设计；新增X5托架与隔套采用同一许可。046/048脚垫保持上游形状，本项目准备TPU打印配置。具体提交、修改范围和署名见`mechanical/README.md`，不把上游本体或商品板卡包装成本项目原创。
+
+本项目独立绘制的系统架构和控制时序图随说明文字采用Apache-2.0；实拍媒体仍按上节CC BY-NC-SA 4.0。商品板卡只公开型号、接口和应用接线，不意味着本项目拥有其底层硬件设计权利。
 
 ## 本次未发布
 

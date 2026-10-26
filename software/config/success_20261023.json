@@ -1,0 +1,13 @@
+{
+  "gain": 0.0,
+  "max_back_deg": 4.0,
+  "deadband_deg": 1.0,
+  "bias_deg": 0.0,
+  "back_gain": 0.0,
+  "max_front_deg": 4.0,
+  "motion_deg": -30.0,
+  "start_hold_s": 0.0,
+  "transition_s": 0.2,
+  "return_advance_s": 1.1,
+  "neck_mode": "two_stage_pose"
+}

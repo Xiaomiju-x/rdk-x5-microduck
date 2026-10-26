@@ -1,0 +1,91 @@
+{
+  "version": "R8A_PUBLIC_20261026",
+  "material": "PLA for R8A, TPU 95A HF for soles",
+  "print_projects_require_reslicing": true,
+  "six_part_project_objects": [
+    {
+      "name": "L1_R8_short_FT_root",
+      "triangles": 10802,
+      "source_geometry_matches": true
+    },
+    {
+      "name": "L2_R8_flat_battery_portrait_X5",
+      "triangles": 5836,
+      "source_geometry_matches": true
+    },
+    {
+      "name": "S1_R8_PCB_spacer_6mm",
+      "triangles": 1008,
+      "source_geometry_matches": true
+    },
+    {
+      "name": "S1_R8_PCB_spacer_6mm",
+      "triangles": 1008,
+      "source_geometry_matches": true
+    },
+    {
+      "name": "S1_R8_PCB_spacer_6mm",
+      "triangles": 1008,
+      "source_geometry_matches": true
+    },
+    {
+      "name": "S1_R8_PCB_spacer_6mm",
+      "triangles": 1008,
+      "source_geometry_matches": true
+    }
+  ],
+  "files": {
+    "cad/R8A_print_parts.FCStd": {
+      "bytes": 409449,
+      "sha256": "3ff6ade5d6c1a3544d59f23159734d10af0a2ecd5078afeb488b6307a5a2c795"
+    },
+    "cad/R8A_print_parts.step": {
+      "bytes": 1792920,
+      "sha256": "bde474e1a740197cde023fe6208b71c2d94a959e6d216f2a12b0a2ac6f85b4d0"
+    },
+    "print_projects/MicroDuck_R8A_L2_ONLY_PLA.3mf": {
+      "bytes": 82256,
+      "sha256": "e2d2d000f6663340a9c394b93d201fdb6d6dc27cc5e8d1b75acbb5123b742454"
+    },
+    "print_projects/R8A_SIX_PARTS_P1S_PLA.3mf": {
+      "bytes": 250187,
+      "sha256": "f0c7f2af4e5482558e2213780cacad7b9c7d3e039172667e7e2c8fe7373c9466"
+    },
+    "print_projects/RDK_FT_LEFT_RIGHT_SOLES_P1S_TPU95AHF.3mf": {
+      "bytes": 503974,
+      "sha256": "b81a2939ca111e2aeb8bae39ef05f42535a8e81d54d7d69866a5ff9171d5ec3a"
+    },
+    "r8a_parts/L1_R8_short_FT_root.step": {
+      "bytes": 1668788,
+      "sha256": "30cbd324354e5f8a978e95073b6978198a18af8c4c4230d60d88f7cd6efe7776"
+    },
+    "r8a_parts/L1_R8_short_FT_root.stl": {
+      "bytes": 540184,
+      "sha256": "a1494adf2cb22f167a61e32925573c91c39fd64827fed42d8ccb574aaaea1476"
+    },
+    "r8a_parts/L2_R8_flat_battery_portrait_X5.step": {
+      "bytes": 164077,
+      "sha256": "90ec5e16d2bd8f4b03f98b24f0e0c5b5956de4db5f469d2cd2ee730d69ae65e5"
+    },
+    "r8a_parts/L2_R8_flat_battery_portrait_X5.stl": {
+      "bytes": 291884,
+      "sha256": "340d3c77ae46aba5bace74a3bacae2b79616e701331d17339e4fe9eb9e3a1fd9"
+    },
+    "r8a_parts/S1_R8_PCB_spacer_6mm.step": {
+      "bytes": 4907,
+      "sha256": "83ac3db5b296c352c3ebf6d5e022dfff8b5bc696e90c3712a9790171e47686ff"
+    },
+    "r8a_parts/S1_R8_PCB_spacer_6mm.stl": {
+      "bytes": 50484,
+      "sha256": "6860be0a2547ecf90e3f16da00f1687e190e911ee35d1e443bffb4c26a88de41"
+    },
+    "tpu_soles/G07_046_sole.stl": {
+      "bytes": 789484,
+      "sha256": "3d99d0f9619f4579bc5bccbc6b9ca9f6de63a053f7f0752bb16ad2dfd9ba6459"
+    },
+    "tpu_soles/G07_048_sole.stl": {
+      "bytes": 794484,
+      "sha256": "fa7fec159eccc8700023dafe5e7b7febfb28d46c2aac37f0c0b33e9799047eff"
+    }
+  }
+}

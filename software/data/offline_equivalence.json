@@ -1,0 +1,31 @@
+{
+  "status": "OFFLINE_ONLY_NO_HARDWARE",
+  "original_replay_sha256": "efb515e939d49a74710a32874923de9216e275ed80fbd8eb4a323637de974217",
+  "public_runtime_sha256": "224c18690a6d7ddc99ad872c345e38ca7e2b463db87d5ddabcd1a149f833b1c6",
+  "cases": [
+    {
+      "cycles": 1,
+      "position_packets": 400,
+      "all_packets_byte_identical": true,
+      "packets_sha256": "032e64ada5b89e420ba1b1f4afbdb016a2db1245a1e5f4109532f61a294bfafe"
+    },
+    {
+      "cycles": 2,
+      "position_packets": 800,
+      "all_packets_byte_identical": true,
+      "packets_sha256": "5bf3943615c3646bb081f4b9613c31ef0c6b1dfa385aab056f9bae8cc8aad854"
+    },
+    {
+      "cycles": 3,
+      "position_packets": 1200,
+      "all_packets_byte_identical": true,
+      "packets_sha256": "046db24c297e83a2cf6d0072ad7608ebee99b62fb28155e3e4e320fa28cfe979"
+    },
+    {
+      "cycles": 5,
+      "position_packets": 2000,
+      "all_packets_byte_identical": true,
+      "packets_sha256": "34f49a2fb6de79c2e79b24a7eb259707cd5067cd76a5249c35511d0d5534ea27"
+    }
+  ]
+}

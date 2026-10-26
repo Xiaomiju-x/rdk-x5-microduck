@@ -1,0 +1,43 @@
+{
+  "scope": "Six printed solids only; no manufacturer PCB or robot assembly meshes",
+  "files_reopened": true,
+  "parametric_history": false,
+  "parts": [
+    {
+      "name": "L1_R8_short_FT_root",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7006.296963998815
+    },
+    {
+      "name": "L2_R8_flat_battery_portrait_X5",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6052.289979267314
+    },
+    {
+      "name": "S1_spacer_01",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 115.40640612962105
+    },
+    {
+      "name": "S1_spacer_02",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 115.40640612962105
+    },
+    {
+      "name": "S1_spacer_03",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 115.40640612962103
+    },
+    {
+      "name": "S1_spacer_04",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 115.40640612962103
+    }
+  ]
+}

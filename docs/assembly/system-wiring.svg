@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="970" viewBox="0 0 1400 970" role="img" aria-label="RDK X5 Duck双电池供电和USB总线控制系统图">
+<defs>
+ <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6" fill="none" stroke="#315fa9" stroke-width="1.5"/></marker>
+ <marker id="orange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6" fill="none" stroke="#c46a20" stroke-width="1.5"/></marker>
+</defs>
+<style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#24364b}.title{font-size:34px;font-weight:700}.label{font-size:25px;font-weight:700}.small{font-size:21px}.note{font-size:19px;fill:#53677d}.box{fill:white;stroke:#b4c5d6;stroke-width:2}.wire{fill:none;stroke:#315fa9;stroke-width:4;marker-end:url(#blue)}.power{fill:none;stroke:#c46a20;stroke-width:4;marker-end:url(#orange)}</style>
+<rect width="1400" height="970" fill="#f7f9fc"/>
+<text x="48" y="53" class="title">RDK X5 Duck · 当前机载架构</text>
+<text x="48" y="88" class="small">双电池分别供电 · X5执行控制 · 电脑打开网页调参</text>
+<rect x="420" y="118" width="390" height="90" rx="15" class="box"/>
+<text x="615" y="153" text-anchor="middle" class="label">电脑 / 浏览器控制台</text>
+<text x="615" y="185" text-anchor="middle" class="note">参数、运行、停止、逐轮日志</text>
+<path d="M615 208V278" class="wire"/>
+<text x="641" y="248" class="note">网络连接</text>
+<rect x="26" y="270" width="1348" height="590" rx="24" fill="#eaf4ee" stroke="#79a795" stroke-width="2" stroke-dasharray="9 7"/>
+<text x="50" y="306" class="small" fill="#23745a">以下硬件均安装在鸭子本体</text>
+<rect x="60" y="350" width="280" height="105" rx="15" fill="#fff1dc" stroke="#d7aa66" stroke-width="2"/>
+<text x="200" y="386" text-anchor="middle" class="label">电池 A</text>
+<text x="200" y="417" text-anchor="middle" class="small">5V成品电源 · USB-C</text>
+<text x="200" y="444" text-anchor="middle" class="note">机身侧面 · 就近给X5供电</text>
+<rect x="440" y="340" width="340" height="130" rx="15" class="box"/>
+<text x="610" y="380" text-anchor="middle" class="label">RDK X5 开发板</text>
+<text x="610" y="414" text-anchor="middle" class="small">Linux / Python / 串口通信</text>
+<text x="610" y="448" text-anchor="middle" class="note">背侧竖装 · 板端执行D动作</text>
+<path d="M340 397H440" class="power"/>
+<text x="356" y="378" class="note">供电口</text>
+<path d="M615 278V340" class="wire"/>
+<rect x="60" y="565" width="280" height="105" rx="15" fill="#fff1dc" stroke="#d7aa66" stroke-width="2"/>
+<text x="200" y="602" text-anchor="middle" class="label">电池 B</text>
+<text x="200" y="634" text-anchor="middle" class="small">稳压5V · DC插头</text>
+<text x="200" y="660" text-anchor="middle" class="note">另一侧 · 就近给微雪供电</text>
+<rect x="440" y="560" width="340" height="135" rx="15" class="box"/>
+<text x="610" y="598" text-anchor="middle" class="label">微雪小板</text>
+<text x="610" y="633" text-anchor="middle" class="small">Bus Servo Adapter (A)</text>
+<text x="610" y="669" text-anchor="middle" class="note">USB控制档 · 两个同总线分支</text>
+<path d="M340 617H440" class="power"/>
+<text x="353" y="596" class="note">DC5521</text>
+<path d="M610 470V560" class="wire"/>
+<text x="627" y="516" class="note">USB数据线</text>
+<rect x="990" y="340" width="320" height="95" rx="15" class="box"/>
+<text x="1150" y="377" text-anchor="middle" class="label">USB-TTL</text>
+<text x="1150" y="412" text-anchor="middle" class="note">独立串口通道</text>
+<path d="M780 387H990" class="wire"/>
+<text x="823" y="370" class="note">另一USB HOST</text>
+<rect x="990" y="485" width="320" height="90" rx="15" class="box"/>
+<text x="1150" y="521" text-anchor="middle" class="label">JY901S IMU</text>
+<text x="1150" y="554" text-anchor="middle" class="note">固定于刚性躯干，保持安装朝向</text>
+<path d="M1150 435V485" class="wire"/>
+<text x="1172" y="467" class="note">UART</text>
+<rect x="900" y="620" width="410" height="85" rx="14" class="box"/>
+<text x="1105" y="653" text-anchor="middle" class="label">左腿01–05 → 头颈/嘴11–15</text>
+<text x="1105" y="684" text-anchor="middle" class="note">D / V / G 对应连接</text>
+<rect x="900" y="745" width="410" height="85" rx="14" class="box"/>
+<text x="1105" y="779" text-anchor="middle" class="label">右腿10 → 09 → 08 → 07 → 06</text>
+<text x="1105" y="809" text-anchor="middle" class="note">从右脚踝侧接入</text>
+<path d="M780 640H900" class="wire"/>
+<path d="M780 675H835V787H900" class="wire"/>
+<text x="60" y="752" class="small">接线要点</text>
+<text x="60" y="785" class="note">两电池正输出不并联；USB不替代舵机动力供电。</text>
+<text x="60" y="816" class="note">断开旧左右腿跨接，保持树形分支，不接成环。</text>
+<text x="48" y="901" class="small">橙色：电源支路　蓝色：通信连接（舵机三线同时含动力供电）</text>
+<text x="48" y="936" class="note">本图表示当前实验拓扑，不按比例；输出电压/极性/电流能力须按硬件页及实物规格核对。</text>
+</svg>
