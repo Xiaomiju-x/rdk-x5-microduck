@@ -12,7 +12,7 @@
   "tests_run": 34,
   "failures": 0,
   "errors": 0,
-  "evidence": "Completed final local unittest rerun after vendor Python 3.10 trace-format compatibility fix and public package version label: 34 tests in 4.245 seconds, OK. Original 1/2/3/5 packet SHA assertions still pass.",
+  "evidence": "Completed final local unittest rerun after event-synchronized DEMO mutex test: 34 tests in 3.974 seconds, OK. Original 1/2/3/5 packet SHA assertions still pass.",
   "motion_functions_ast_identical_to_v2026_10_26": {
     "run_cycle": true,
     "run": true,
@@ -65,5 +65,20 @@
     "real_python_3_10_status": "Remote CI is to be rerun; AST parse here is not a real Python 3.10 execution."
   },
   "public_package_version": "D_PUBLIC_CASE_20261027_R1",
-  "release_tag": "v2026.10.27.1"
+  "release_tag": "v2026.10.27.1",
+  "ci_test_timing_fix": {
+    "finding": "Remote Windows Python 3.10 DEMO test exceeded its 3-second wall-clock poll deadline because 800 tiny sleeps were quantized by the OS timer. Other tested jobs completed.",
+    "change": "Only test_demo_2_cycles_and_mutex injects a separate app.time object, blocks first worker delay with an Event, asserts task mutex, releases worker, and awaits completion Event. Real app timing is unchanged.",
+    "preserved_assertions": [
+      "second run is rejected while busy",
+      "2 cycles complete",
+      "motion_writes equals 0"
+    ],
+    "additional_assertions": [
+      "global_frame equals 800",
+      "manager is not busy after completion"
+    ],
+    "test_runtime_sha256": "ba8bf1d7ee4ca684a6f3bb067c1e435584ff390236be64bedcd141f28298330d",
+    "remote_result": "CI needs rerun on the final commit; local pass is not a claim of remote success."
+  }
 }

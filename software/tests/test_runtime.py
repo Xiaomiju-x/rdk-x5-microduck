@@ -212,12 +212,31 @@ class PanelTests(unittest.TestCase):
                 with self.assertRaises(ValueError):m.start({'action':action})
     def test_demo_2_cycles_and_mutex(self):
         with tempfile.TemporaryDirectory() as tmp:
-            m=Manager(data_dir=tmp,demo_scale=.001);m.start({'action':'run','onsite_ready':True,'cycles':2})
-            with self.assertRaises(ValueError):m.start({'action':'run','onsite_ready':True})
-            deadline=time.monotonic()+3
-            while m.status()['busy'] and time.monotonic()<deadline:time.sleep(.01)
+            m=Manager(data_dir=tmp,demo_scale=.001)
+            entered=threading.Event();release=threading.Event();finished=threading.Event()
+            real_work=m._work
+            def controlled_sleep(_seconds):
+                # Gate the first worker sleep so the mutex assertion cannot race completion.
+                # Later DEMO delays are skipped only in this test; app timing stays unchanged.
+                if not entered.is_set():
+                    entered.set()
+                    if not release.wait(10):raise RuntimeError('Test did not release the DEMO worker')
+            def observed_work(*args):
+                try:return real_work(*args)
+                finally:finished.set()
+            m._work=observed_work
+            # Replace app's reference, not the shared time module (or the test's own waits).
+            with patch('app.time',SimpleNamespace(time=time.time,sleep=controlled_sleep)):
+                m.start({'action':'run','onsite_ready':True,'cycles':2})
+                try:
+                    self.assertTrue(entered.wait(10),'DEMO worker did not enter')
+                    with self.assertRaises(ValueError):m.start({'action':'run','onsite_ready':True})
+                finally:release.set()
+                self.assertTrue(finished.wait(10),'DEMO worker did not finish')
             self.assertEqual(m.current['status'],'completed');self.assertEqual(m.current['result']['cycles_completed'],2)
             self.assertEqual(m.current['result']['motion_writes'],0)
+            self.assertEqual(m.current['progress']['global_frame'],800)
+            self.assertFalse(m.status()['busy'])
     def test_http_same_origin_and_token(self):
         with tempfile.TemporaryDirectory() as tmp:
             m=Manager(data_dir=tmp);server=ThreadingHTTPServer(('127.0.0.1',0),make_handler(m));thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
