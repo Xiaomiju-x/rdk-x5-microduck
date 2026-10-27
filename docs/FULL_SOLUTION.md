@@ -2,10 +2,10 @@
 
 **本案例围绕现有 RDK X5 开发板，完整说明如何搭建一台飞特舵机机器鸭，并建立可继续改进的控制与仿真环境。** 原型已在计算板、驱动板和电池全部上身的条件下实现短距离前进。本次把采购、打印、接线、软件、模型、首次运行和调试方法按复刻顺序组织起来。
 
-> 固定版本：v2026.10.27。原型短距离实拍：2026-10-23。读者既可以从零采购搭建，也可以先在没有硬件的电脑上体验控制台与仿真。
+> 固定版本：v2026.10.27.1。原型短距离实拍：2026-10-23。读者既可以从零采购搭建，也可以先在没有硬件的电脑上体验控制台与仿真。
 
 - 项目仓库：https://github.com/Xiaomiju-x/rdk-x5-microduck
-- 固定版本与完整下载：https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27
+- 固定版本与完整下载：https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1
 - 地瓜社区主帖：https://forum.d-robotics.cc/t/topic/35728/1
 
 ## 1. 案例目标与实际成果
@@ -214,7 +214,7 @@ X5系统镜像和初始联网按[RDK官方文档](https://d-robotics.github.io/r
 推荐下载本次Release的完整附件。使用Git时固定版本：
 
 ```sh
-git clone --branch v2026.10.27 --depth 1 https://github.com/Xiaomiju-x/rdk-x5-microduck.git
+git clone --branch v2026.10.27.1 --depth 1 https://github.com/Xiaomiju-x/rdk-x5-microduck.git
 cd rdk-x5-microduck
 ```
 

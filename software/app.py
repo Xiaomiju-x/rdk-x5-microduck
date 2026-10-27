@@ -99,7 +99,7 @@ def make_handler(manager):
         def do_GET(self):
             try:
                 self._local()
-                if self.path=='/api/config':self._send(200,{'version':'D_PUBLIC_20261026','demo':manager.demo,'parameters':manager.parameters,'cycles':[1,2,3,5],'token':manager.token})
+                if self.path=='/api/config':self._send(200,{'version':'D_PUBLIC_CASE_20261027_R1','demo':manager.demo,'parameters':manager.parameters,'cycles':[1,2,3,5],'token':manager.token})
                 elif self.path=='/api/status':self._send(200,manager.status())
                 elif self.path in ('/','/index.html','/app.js','/style.css'):
                     filename='index.html' if self.path=='/' else self.path[1:]

@@ -140,7 +140,8 @@ class FeetechBus:
             raise BusError(f"等 id {expect_id} 的应答，来的是 id {sid}（ff ff {hexs(rest + body)}）")
         self.stats["rx_ok"] += 1
         if self.trace and self._last[1] not in self.trace_skip:
-            self.trace(f"← #{sid} 状态0x{err:02X} {hexs(b'\xff\xff' + rest + body)}"
+            packet_text = hexs(b"\xff\xff" + rest + body)
+            self.trace(f"← #{sid} 状态0x{err:02X} {packet_text}"
                        + (f"  数据 {list(params)}" if params else ""))
         return sid, err, bytes(params)
 

@@ -1,4 +1,4 @@
-# v2026.10.27 · RDK X5 Duck完整复刻案例
+# v2026.10.27.1 · RDK X5 Duck完整复刻案例
 
 本版在10月26日固定开源包基础上，将资料重组为从采购到装配、软件、仿真与首次实机的完整案例。原型成果仍以10月23日全机载短距离实拍为依据，本次没有新增实机行走、标定或控制参数修改。
 
@@ -18,7 +18,11 @@
 
 无硬件读者可从 [DEMO](DEPLOYMENT.md) 和 [仿真环境](SIMULATION.md)开始。
 
-固定Release：https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27
+固定Release：https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1
+
+## Python 3.10兼容修订
+
+首次远端CI发现上游串口模块的调试f-string写法需要Python3.12。修订版只调整字符串兼容写法，保留数据包与动作算法，重新验证3.10/3.12。初始v2026.10.27源码标签保留，推荐以本修订版为准。
 
 ## 本版实际验证
 

@@ -6,7 +6,7 @@
 
 [![点击查看全机载短距离前进视频](docs/images/video-cover.jpg)](media/20261023/onboard-short-walk.mp4)
 
-**[阅读完整案例](docs/FULL_SOLUTION.md) · [下载固定版本 v2026.10.27](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27) · [地瓜社区主帖](https://forum.d-robotics.cc/t/topic/35728/1)**
+**[阅读完整案例](docs/FULL_SOLUTION.md) · [下载固定版本 v2026.10.27.1](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1) · [地瓜社区主帖](https://forum.d-robotics.cc/t/topic/35728/1)**
 
 ## 选一个入口开始
 

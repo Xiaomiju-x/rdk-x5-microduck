@@ -12,7 +12,7 @@
   "tests_run": 34,
   "failures": 0,
   "errors": 0,
-  "evidence": "Completed local unittest rerun after onsite-ready wording change: 34 tests in 4.211 seconds, OK. Original test_complete_1_2_3_5_byte_identical checks packet hashes against preserved historical evidence.",
+  "evidence": "Completed final local unittest rerun after vendor Python 3.10 trace-format compatibility fix and public package version label: 34 tests in 4.245 seconds, OK. Original 1/2/3/5 packet SHA assertions still pass.",
   "motion_functions_ast_identical_to_v2026_10_26": {
     "run_cycle": true,
     "run": true,
@@ -38,6 +38,32 @@
   "imu_diagnostics_sha256": "287190d1422ce149a7397c06e5d5ab69fd1ff123874cf11ce442f41a4b865fdb",
   "ci_status": "Workflow supplied; consult Actions for actual remote run results.",
   "final_wording_change": "Onsite checkbox and matching validation error now describe either supported airborne testing or self-standing ground testing; same onsite_ready boolean and unchanged execution path.",
-  "app_sha256": "a7468b6d7545b029e406a9ae241da6f07ceb663e9026ae09fcf87347ee21b08c",
-  "web_index_sha256": "1cf710e8c32a302dedeb90fdecac151f20c4e12f7d02571d8404135c1ccf9094"
+  "app_sha256": "3ab7180448d69499ddc464092ebd8605cdd04d6c227b493135234d396f984c88",
+  "web_index_sha256": "1cf710e8c32a302dedeb90fdecac151f20c4e12f7d02571d8404135c1ccf9094",
+  "vendor_compatibility": {
+    "original_upstream_sha256": "6523fcf728393f9f185edbc6760a538474b8a009e298f2444849b0c4558dad9a",
+    "modified_sha256": "5c9919723a9ef3e05a3274dad86e5b18262d2119580e6a66e6cac734efbc4f56",
+    "change": "Only preformats the existing response debug string outside the f-string expression, preserving protocol bytes and trace output.",
+    "python_3_10_ast_parse_files": 14,
+    "trace_and_return_equivalence_cases": [
+      {
+        "packet_hex": "ffff030200fa",
+        "same_return": true,
+        "same_trace": true
+      },
+      {
+        "packet_hex": "ffff030500007fff79",
+        "same_return": true,
+        "same_trace": true
+      },
+      {
+        "packet_hex": "ffff030202f8",
+        "same_return": true,
+        "same_trace": true
+      }
+    ],
+    "real_python_3_10_status": "Remote CI is to be rerun; AST parse here is not a real Python 3.10 execution."
+  },
+  "public_package_version": "D_PUBLIC_CASE_20261027_R1",
+  "release_tag": "v2026.10.27.1"
 }

@@ -2,7 +2,7 @@
 
 本次完整方案的推荐软件入口：单一 D 控制台、板端串口运行、400 帧相对轨迹、分段颈部角度、提前收颈、完整单轮与连续 2/3/5 轮、只读检查及托稳慢复位。
 
-建议从 [v2026.10.27 固定 Release](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27) 开始。首次复刻按 [FIRST_RUN](../docs/FIRST_RUN.md) 完成编号、站姿和 IMU 方向；完整安装命令在 [DEPLOYMENT](../DEPLOYMENT.md)。
+建议从 [v2026.10.27.1 固定 Release](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1) 开始。首次复刻按 [FIRST_RUN](../docs/FIRST_RUN.md) 完成编号、站姿和 IMU 方向；完整安装命令在 [DEPLOYMENT](../DEPLOYMENT.md)。公开包标识为 `D_PUBLIC_CASE_20261027_R1`，用于区分新增诊断与兼容修订，不表示D动作基线发生变化。
 
 **10 月 23 日实机成功的是当时的完整集成与参数。这里的便携运行包从该实现提取，已做离线轨迹、算法和串口目标包对照，未在发布过程中新增实机试跑。** 参数不是所有复刻机器通用的标定值。连续多轮功能已完成软件检查，连续稳定行走仍需实物验证。
 
@@ -111,6 +111,6 @@ python runtime.py imu-check --robot .local/robot.json --seconds 8
 
 ## 来源与验证边界
 
-本包新增代码按根 [Apache-2.0](../LICENSE) 发布。`vendor/feetech.py` 保留 [fanhao375/microduck-replica 的 tools/servo-web 实现](https://github.com/fanhao375/microduck-replica/tree/master/tools/servo-web)，未改内容；上游 tools 属 Apache-2.0，原声明见 [vendor/LICENSE](vendor/LICENSE)。结构、媒体及上游模型许可见 [NOTICE.md](../NOTICE.md)。
+本包新增代码按根 [Apache-2.0](../LICENSE) 发布。`vendor/feetech.py` 来源于 [fanhao375/microduck-replica 的 tools/servo-web 实现](https://github.com/fanhao375/microduck-replica/tree/master/tools/servo-web)，保留上游归属与 Apache-2.0 许可。本修订仅将一处调试日志中的字节串先格式化再插入 f-string，使 Python 3.10/3.11 也能解析；协议、状态解码与动作指令不改。原文件 SHA 与改动说明见 [vendor/README.md](vendor/README.md)，许可见 [vendor/LICENSE](vendor/LICENSE)。结构、媒体及上游模型许可见 [NOTICE.md](../NOTICE.md)。
 
 离线检查包括：400 帧增量和时间间隔与原候选一致；颈算法只改导入；同输入下原运行器与公开运行器 1/2/3/5 轮位置包逐字节一致；停止和故障不续跑；只读捕获无写；复位使能顺序；界面互斥、现场确认和同源访问。不是动力学或新实机稳定性验收。

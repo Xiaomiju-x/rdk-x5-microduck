@@ -15,10 +15,10 @@ D不依赖ROS、ONNX、CUDA或NPU。电脑不承担实时目标执行。两个�
 
 ## 2. 下载固定发布版
 
-推荐 [v2026.10.27 Release](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27) 的完整资料包，解压后进入 `software/`。也可在电脑或X5自己的工作目录执行：
+推荐 [v2026.10.27.1 Release](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1) 的完整资料包，解压后进入 `software/`。也可在电脑或X5自己的工作目录执行：
 
 ```sh
-git clone --branch v2026.10.27 --depth 1 https://github.com/Xiaomiju-x/rdk-x5-microduck.git
+git clone --branch v2026.10.27.1 --depth 1 https://github.com/Xiaomiju-x/rdk-x5-microduck.git
 cd rdk-x5-microduck/software
 ```
 
