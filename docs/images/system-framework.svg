@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1840" viewBox="0 0 2400 1840">
+<rect width="100%" height="100%" fill="#f4f7fb"/>
+<rect x="0" y="0" width="2400" height="230" rx="0" fill="#12273b" stroke="none" stroke-width="2"/>
+<text x="72" y="59" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#5ed3bb">RDK X5 DUCK  /  OPEN ROBOTICS CASE</text>
+<text x="72" y="139" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="59" font-weight="700" fill="white">从开发环境到机载执行，一张图读懂整套方案</text>
+<text x="76" y="191" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="400" fill="#d4e2ed">硬件、软件、离线仿真与供电分别展开；实线为当前控制链，虚线为后续研究路径。</text>
+<text x="75" y="302" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="34" font-weight="700" fill="#7356af">01  开发与验证 · 电脑</text>
+<text x="760" y="302" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="34" font-weight="700" fill="#008d80">02  机载运行 · RDK X5</text>
+<text x="1705" y="302" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="34" font-weight="700" fill="#2477b6">03  实体机器人</text>
+<rect x="75" y="335" width="600" height="265" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="97" y="359" width="58" height="58" rx="16" fill="#7356af" stroke="none" stroke-width="2"/>
+<text x="110" y="396" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">A</text>
+<text x="175" y="395" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">浏览器控制台</text>
+<text x="105" y="471" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">查看状态 · 保存参数 · 运行 / 停止</text>
+<text x="105" y="514" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">颈部三阶段微调 · 完整1/2/3/5轮</text>
+<text x="105" y="557" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">本地浏览器通过SSH端口转发访问</text>
+<rect x="75" y="655" width="600" height="305" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="97" y="679" width="58" height="58" rx="16" fill="#7356af" stroke="none" stroke-width="2"/>
+<text x="110" y="716" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">B</text>
+<text x="175" y="715" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">软件离线验证</text>
+<text x="105" y="791" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">Python + NumPy + pyserial</text>
+<text x="105" y="834" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">DEMO进度演示 / 配置与协议检查</text>
+<text x="105" y="877" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">假总线逐帧对照 · 自动化测试</text>
+<text x="105" y="920" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">不连接舵机，不证明动力学稳定</text>
+<rect x="75" y="1015" width="600" height="340" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="97" y="1039" width="58" height="58" rx="16" fill="#7356af" stroke="none" stroke-width="2"/>
+<text x="110" y="1076" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">C</text>
+<text x="175" y="1075" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">仿真与策略研究</text>
+<text x="105" y="1151" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">MuJoCo · FT几何教学模型</text>
+<text x="105" y="1194" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">查看关节 / 小幅往返 / 结果日志</text>
+<text x="105" y="1237" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">GPU训练：独立的后续RL路线</text>
+<text x="105" y="1280" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">模型、负载、执行器需与实物对齐</text>
+<text x="105" y="1323" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">仿真不直接控制这次D短动作</text>
+<rect x="760" y="335" width="870" height="1020" rx="30" fill="#e8f5f1" stroke="#a8d9cd" stroke-width="2"/>
+<text x="800" y="412" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="40" font-weight="700" fill="#008d80">机载Linux + Python</text>
+<text x="800" y="455" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">动作执行留在X5，电脑负责操作与观察</text>
+<rect x="800" y="505" width="790" height="180" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="822" y="529" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="835" y="566" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">1</text>
+<text x="900" y="565" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">Web服务 / 任务管理</text>
+<text x="830" y="641" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">app.py · 同一时刻一个任务 · 参数与日志</text>
+<rect x="800" y="715" width="790" height="220" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="822" y="739" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="835" y="776" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">2</text>
+<text x="900" y="775" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">D动作执行器</text>
+<text x="830" y="851" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">400帧相对目标 + 本机START</text>
+<text x="830" y="894" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">neck.py：启动 / 走动 / 提前收颈</text>
+<rect x="800" y="970" width="790" height="220" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="822" y="994" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="835" y="1031" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">3</text>
+<text x="900" y="1030" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">设备读回与总线接口</text>
+<text x="830" y="1106" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">舵机：位置、使能、故障与配置</text>
+<text x="830" y="1149" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">IMU：姿态 / 角速度 / 数据新鲜度</text>
+<polyline points="1195,685 1195,715" stroke="#008d80" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="1195,715 1186.3703403051243,699.2035138859733 1203.6296596948757,699.2035138859733" fill="#008d80"/>
+<polyline points="1195,935 1195,970" stroke="#008d80" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="1195,970 1186.3703403051243,954.2035138859733 1203.6296596948757,954.2035138859733" fill="#008d80"/>
+<polygon points="1195,935 1203.6296596948757,950.7964861140267 1186.3703403051243,950.7964861140267" fill="#008d80"/>
+<rect x="810" y="1230" width="754" height="48" rx="24" fill="#e1f4ef" stroke="none" stroke-width="2"/>
+<text x="830" y="1261" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" font-weight="700" fill="#008d80">当前D默认：定时配合；不依赖RL / NPU推理</text>
+<rect x="1705" y="335" width="620" height="265" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1727" y="359" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="1740" y="396" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">D</text>
+<text x="1805" y="395" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">微雪 Bus Servo Adapter (A)</text>
+<text x="1735" y="471" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">X5 USB HOST → 小板USB-C</text>
+<text x="1735" y="514" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">USB / TTL协议接口</text>
+<text x="1735" y="557" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">两路接口属于同一舵机总线</text>
+<rect x="1705" y="690" width="620" height="265" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1727" y="714" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="1740" y="751" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">E</text>
+<text x="1805" y="750" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">15轴飞特 HD1910M</text>
+<text x="1735" y="826" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">左腿5轴 + 右腿5轴</text>
+<text x="1735" y="869" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">头颈4轴 + 嘴部1轴</text>
+<text x="1735" y="912" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">下发位置目标 / 回读实际状态</text>
+<rect x="1705" y="1075" width="620" height="280" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1727" y="1099" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="1740" y="1136" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">F</text>
+<text x="1805" y="1135" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">IMU + 机械结构</text>
+<text x="1735" y="1211" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">JY901S通过USB-TTL连接X5</text>
+<text x="1735" y="1254" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">FT本体 · PLA安装件 · TPU脚垫</text>
+<text x="1735" y="1297" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">IMU固定在躯干刚性部位</text>
+<polyline points="675,460 760,460" stroke="#7356af" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="760,460 744.2035138859733,468.62965969487567 744.2035138859733,451.37034030512433" fill="#7356af"/>
+<polygon points="675,460 690.7964861140267,451.37034030512433 690.7964861140267,468.62965969487567" fill="#7356af"/>
+<text x="679" y="433" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#7356af">SSH</text>
+<polyline points="1630,460 1705,460" stroke="#2477b6" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="1705,460 1689.2035138859733,468.62965969487567 1689.2035138859733,451.37034030512433" fill="#2477b6"/>
+<polygon points="1630,460 1645.7964861140267,451.37034030512433 1645.7964861140267,468.62965969487567" fill="#2477b6"/>
+<text x="1637" y="433" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#2477b6">USB</text>
+<polyline points="2015,600 2015,690" stroke="#2477b6" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="2015,690 2006.3703403051243,674.2035138859733 2023.6296596948757,674.2035138859733" fill="#2477b6"/>
+<polygon points="2015,600 2023.6296596948757,615.7964861140267 2006.3703403051243,615.7964861140267" fill="#2477b6"/>
+<text x="2040" y="651" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#2477b6">TTL总线</text>
+<polyline points="1705,1200 1630,1200" stroke="#2477b6" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="1630,1200 1645.7964861140267,1191.3703403051243 1645.7964861140267,1208.6296596948757" fill="#2477b6"/>
+<text x="1640" y="1169" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#2477b6">串口</text>
+<polyline points="675,1210 760,1210" stroke="#7356af" fill="none" stroke-width="6" stroke-linejoin="round" stroke-dasharray="12 10"/>
+<polygon points="760,1210 744.2035138859733,1218.6296596948757 744.2035138859733,1201.3703403051243" fill="#7356af"/>
+<text x="678" y="1174" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#7356af">候选</text>
+<rect x="75" y="1410" width="2250" height="306" rx="25" fill="#fff5e5" stroke="#ebd4ad" stroke-width="2"/>
+<text x="105" y="1474" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="34" font-weight="700" fill="#c98117">04  当前实机供电 · 两路分别供电</text>
+<rect x="105" y="1510" width="1070" height="142" rx="18" fill="white" stroke="#ead4b2" stroke-width="2"/>
+<text x="140" y="1561" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#18334a">电池A · USB-C输出</text>
+<text x="760" y="1561" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#18334a">RDK X5电源口</text>
+<polyline points="500,1564 725,1564" stroke="#c98117" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="725,1564 709.2035138859733,1572.6296596948757 709.2035138859733,1555.3703403051243" fill="#c98117"/>
+<text x="140" y="1613" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#526b7d">计算与外设供电；首次联调可使用适配器</text>
+<rect x="1205" y="1510" width="1090" height="142" rx="18" fill="white" stroke="#ead4b2" stroke-width="2"/>
+<text x="1235" y="1561" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#18334a">电池B · DC输出</text>
+<text x="1800" y="1561" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#18334a">微雪 → 15轴舵机</text>
+<polyline points="1550,1564 1765,1564" stroke="#c98117" fill="none" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="1765,1564 1749.2035138859733,1572.6296596948757 1749.2035138859733,1555.3703403051243" fill="#c98117"/>
+<text x="1235" y="1613" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#526b7d">舵机动力支路；USB数据线不替代动力供电</text>
+<text x="105" y="1693" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#c98117">后续版本：单电池 + 分路稳压/配电 + 隐藏线束；需验证峰值负载与X5不断电。</text>
+<text x="75" y="1787" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">信号与电源示意图，不是针脚接线图。准确接口、极性和实际配置见硬件与首次部署章节。</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1040" viewBox="0 0 1800 1040">
+<rect width="100%" height="100%" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1800" height="230" rx="0" fill="#12273b" stroke="none" stroke-width="2"/>
+<text x="72" y="59" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#5ed3bb">RDK X5 DUCK  /  OPEN ROBOTICS CASE</text>
+<text x="72" y="139" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="59" font-weight="700" fill="white">机体坐标与IMU安装方向</text>
+<text x="76" y="191" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="400" fill="#d4e2ed">身体方向、传感器轴与舵机计数增减是不同概念；先看模块轴标，再填写旋转映射。</text>
+<rect x="75" y="300" width="790" height="610" rx="22" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="930" y="300" width="795" height="610" rx="22" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<text x="110" y="362" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="32" font-weight="700" fill="#18334a">俯视：嘴巴朝右</text>
+<rect x="330" y="525" width="240" height="190" rx="60" fill="#e3eaeF" stroke="#a9bbc7" stroke-width="2"/>
+<rect x="560" y="550" width="160" height="130" rx="45" fill="#e3eaeF" stroke="#a9bbc7" stroke-width="2"/>
+<text x="582" y="586" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="400" fill="#526b7d">头部</text>
+<polyline points="450,620 775,620" stroke="#d55344" fill="none" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="775,620 759.2035138859733,628.6296596948756 759.2035138859733,611.3703403051244" fill="#d55344"/>
+<text x="675" y="695" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#d55344">+X 向前</text>
+<polyline points="450,620 450,420" stroke="#008d80" fill="none" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="450,420 458.62965969487567,435.7964861140267 441.37034030512433,435.7964861140267" fill="#008d80"/>
+<text x="490" y="454" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="29" font-weight="700" fill="#008d80">+Y 自身左侧</text>
+<circle cx="450" cy="620" r="24" fill="#2477b6" stroke="white" stroke-width="3"/>
+<text x="441" y="627" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="white">·</text>
+<text x="118" y="822" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#2477b6">+Z 朝向你（垂直于俯视图向外）</text>
+<text x="970" y="362" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="32" font-weight="700" fill="#18334a">侧视：嘴巴朝右</text>
+<rect x="1160" y="535" width="240" height="170" rx="50" fill="#e3eaef" stroke="#a9bbc7" stroke-width="2"/>
+<rect x="1370" y="465" width="220" height="130" rx="45" fill="#e3eaef" stroke="#a9bbc7" stroke-width="2"/>
+<polyline points="1280,620 1640,620" stroke="#d55344" fill="none" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="1640,620 1624.2035138859733,628.6296596948756 1624.2035138859733,611.3703403051244" fill="#d55344"/>
+<text x="1480" y="690" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#d55344">+X 向前</text>
+<polyline points="1280,620 1280,410" stroke="#2477b6" fill="none" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="1280,410 1288.6296596948757,425.7964861140267 1271.3703403051243,425.7964861140267" fill="#2477b6"/>
+<text x="1320" y="415" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#2477b6">+Z 向上</text>
+<text x="970" y="821" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#008d80">+Y 指向鸭子自身左侧，不按观察者左右</text>
+<text x="75" y="979" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">安装矩阵的每一列 = 传感器对应正轴在机体坐标中的方向；固定安装后用小幅前后倾验证。</text>
+</svg>

@@ -1,0 +1,22 @@
+name: 机械改件 / Mechanical change
+description: 提交装配问题或可复用的结构改进
+title: '[机械] '
+body:
+  - type: input
+    id: version
+    attributes: {label: '基于哪版零件', placeholder: 'FT 本体版本 / L1、L2 R8A / TPU 左右脚垫'}
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: '问题与尺寸证据', description: '附带尺寸的照片，说明材料、打印机、喷嘴、切片配置与装配位置。'}
+    validations: {required: true}
+  - type: textarea
+    id: solution
+    attributes: {label: '修改与验证', description: '提供 STEP/源文件与差异、质量变化、装配检查及活动范围；明确哪些已实装、哪些只有 CAD 检查。'}
+  - type: checkboxes
+    id: attribution
+    attributes:
+      label: 来源
+      options:
+        - label: '已注明上游作者与许可，提交文件不包含无权公开的内容。'
+          required: true

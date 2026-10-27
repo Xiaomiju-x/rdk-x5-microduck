@@ -1,0 +1,19 @@
+name: 复刻记录 / Build report
+description: 分享你的硬件、安装版本和实际效果
+title: '[复刻] '
+body:
+  - type: input
+    id: version
+    attributes: {label: '发布版本 / Release tag', placeholder: '例如 v2026.10.27'}
+    validations: {required: true}
+  - type: textarea
+    id: hardware
+    attributes: {label: '硬件与装载', description: '结构版本、舵机型号、供电、IMU、附件位置，以及相对本案例的改动。'}
+    validations: {required: true}
+  - type: textarea
+    id: result
+    attributes: {label: '实际效果', description: '区分悬空/落地、单轮/多轮、是否需接住；附参数和经过检查的图片或视频。'}
+    validations: {required: true}
+  - type: textarea
+    id: lessons
+    attributes: {label: '遇到的问题与改进', description: '哪些步骤容易误解、哪些零件需要修改？'}

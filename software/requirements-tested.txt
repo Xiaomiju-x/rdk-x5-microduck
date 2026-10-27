@@ -1,0 +1,4 @@
+# Offline Windows x86_64 / CPython 3.12.14 reference environment, 2026-10-27.
+# This pins Python dependencies; it is not an RDK OS image or hardware certificate.
+numpy==2.2.6
+pyserial==3.5

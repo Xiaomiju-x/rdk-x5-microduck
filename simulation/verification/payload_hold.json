@@ -1,0 +1,61 @@
+{
+  "scope": "OFFLINE_FT_TEACHING_SIMULATION_NOT_HARDWARE_OR_WALKING_ACCEPTANCE",
+  "mode": "hold",
+  "trunk_fixed": false,
+  "hardware_io": false,
+  "complete": true,
+  "steps": 400,
+  "simulation_seconds": 2.0,
+  "platform": "Windows",
+  "python": "3.12.14",
+  "mujoco": "3.10.0",
+  "numpy": "2.3.5",
+  "model_sha256": "505f88feae5af8824e53896da6ba743487fa2679594622d5adafa30f4fe47b33",
+  "model_manifest_sha256": "0ba38570441f1aba31a00e92547e37558fd42362b749df84fbd32285e03f9c62",
+  "payload_sha256": "97fe1114d387bfb68f5a0be6e112b9918ba6539f1ab2358ed9344e9a258f7233",
+  "total_mass_kg": 0.695,
+  "joint_count": 15,
+  "actuator_count": 14,
+  "timestep_s": 0.005,
+  "payload_added": true,
+  "initial_com_world_m": [
+    0.01588078409531086,
+    -0.0002446857501814904,
+    0.13607182822641187
+  ],
+  "final_com_world_m": [
+    0.14981227084934548,
+    0.0023494486406427967,
+    -0.10273620084878568
+  ],
+  "max_tilt_deg": 179.74282445482683,
+  "peak_contact_count": 6,
+  "max_target_tracking_error_deg": 2.293994618605464,
+  "target_clip_rad": 0.0,
+  "joint_motion_range_deg": {
+    "left_hip_yaw": 0.5143244083284533,
+    "left_hip_roll": 0.6433476905662326,
+    "left_hip_pitch": 2.7783870980643135,
+    "left_knee": 3.374424123986562,
+    "left_ankle": 3.1278345466129043,
+    "neck_pitch": 3.191739445072933,
+    "head_pitch": 1.3935477762594568,
+    "head_yaw": 0.027974734048094824,
+    "head_roll": 0.05400841815789655,
+    "right_hip_yaw": 0.47538363279411444,
+    "right_hip_roll": 0.7978277638225799,
+    "right_hip_pitch": 3.1073121928080125,
+    "right_knee": 2.458823098418963,
+    "right_ankle": 3.101003802454039
+  },
+  "warning_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "interpretation": "Finite integration and reported motion only; no learned policy, real load, voltage dynamics or calibrated START."
+}

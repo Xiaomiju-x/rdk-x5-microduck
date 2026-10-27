@@ -1,6 +1,8 @@
-# RDK Duck 机载结构增量包 · R8A
+# RDK Duck 打印结构：FT本体选定件 + R8A机载改件
 
-本目录提供当前X5下部支架和FT脚垫，整机原CAD从[机械行者Robo / fanhao375 FT仓库](https://github.com/fanhao375/microduck-replica-cad)获取。本包不包含旧远悬重背包、不包含商品板卡的厂家模型。
+本目录提供选定的28个FT本体STL、X5下部R8A支架六实体和左右TPU脚垫，共34个硬件实体与2个脚底套。整机原SolidWorks CAD从[机械行者Robo / fanhao375 FT仓库](https://github.com/fanhao375/microduck-replica-cad)的固定来源获取。本包不包含旧远悬重背包、不包含商品板卡的厂家模型。
+
+首次打印先看[body_parts选件说明](body_parts/README.md)和[52对象取舍表](../docs/FT_PRINT_SELECTION.csv)：原052底板由L1替换，原软嘴等备选按表处理，不能在28件之外把所有旧件再装一遍。本体STL与冻结来源逐件校验，出处与哈希在body_parts内的清单中；R8A文件见下表。[采购与打印明细](../docs/PROCUREMENT.md)给工具、五金与固定上游资产入口。
 
 ## 文件与数量
 

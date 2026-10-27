@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="rdk_ft_bare_teaching_reference">
+  <compiler angle="radian" meshdir="meshes" inertiafromgeom="false" />
+  <option timestep=".005" gravity="0 0 -9.81" integrator="implicitfast" iterations="30" />
+  <asset>
+    <mesh name="link_00" file="link_00.stl" />
+    <mesh name="link_01" file="link_01.stl" />
+    <mesh name="link_02" file="link_02.stl" />
+    <mesh name="link_03" file="link_03.stl" />
+    <mesh name="link_04" file="link_04.stl" />
+    <mesh name="link_05" file="link_05.stl" />
+    <mesh name="link_06" file="link_06.stl" />
+    <mesh name="link_07" file="link_07.stl" />
+    <mesh name="link_08" file="link_08.stl" />
+    <mesh name="link_09" file="link_09.stl" />
+    <mesh name="link_10" file="link_10.stl" />
+    <mesh name="link_11" file="link_11.stl" />
+    <mesh name="link_12" file="link_12.stl" />
+    <mesh name="link_14" file="link_14.stl" />
+    <mesh name="link_15" file="link_15.stl" />
+    <texture name="sky" type="skybox" builtin="gradient" rgb1=".17 .24 .33" rgb2=".64 .74 .82" width="512" height="2048" />
+  </asset>
+  <worldbody>
+    <body name="trunk_base" pos="0 0 0.109628168649">
+      <freejoint name="root" />
+      <inertial pos="0.01064752229 -0.002499999478 0.03099965549" mass="0.139798115741" diaginertia="0.000186130574545 0.000238306484599 0.000328999484548" />
+      <geom name="ft_link_00" type="mesh" mesh="link_00" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+      <body name="ft_01" pos="0.001999999521 0.01749999959 0.04020000012" quat="1 2.40445548358e-14 2.78727326302e-15 4.91440379692e-08">
+        <joint name="left_hip_yaw" type="hinge" axis="-4.892669758e-07 -5.671640708e-08 -1" limited="true" range="-0.849999901712 0.850000098288" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+        <body name="ft_02" pos="-0.01149617504 4.983836607e-06 -0.03994999999" quat="0.999648851356 -0.0264985656872 9.41729338443e-09 1.25024196011e-08">
+          <joint name="left_hip_roll" type="hinge" axis="1 -3.553887971e-07 -4.718149559e-07" limited="true" range="-0.796996664464 0.903003335536" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+          <body name="ft_03" pos="0.008949999382 0.04843046624 -0.001519990971" quat="0.999703461416 1.10651755155e-08 -0.0243394330061 0.000762387426147">
+            <joint name="left_hip_pitch" type="hinge" axis="4.54396421898e-07 -0.999509791196 0.0313077834199" limited="true" range="-0.598707555176 1.10129244482" armature=".002243099" damping=".00806642" stiffness="0" ref="0.3" />
+            <body name="ft_04" pos="-0.009666920903 -0.001275925625 -0.04073491003" quat="0.9999786424 -2.9697767442e-09 0.00653244785927 -0.000204616767721">
+              <joint name="left_knee" type="hinge" axis="4.54396421898e-07 -0.999509791196 0.0313077834199" limited="true" range="-0.836928603555 0.863071396445" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+              <body name="ft_05" pos="-5.214958308e-05 -0.03164300024 -0.04096862574" quat="0.999841258345 -8.0961420048e-09 0.0178086199951 -0.000557821867003">
+                <joint name="left_ankle" type="hinge" axis="-4.54396421898e-07 0.999509791196 -0.0313077834199" limited="true" range="-0.585636594129 1.11436340587" armature=".002243099" damping=".00806642" stiffness="0" ref="0.3" />
+                <inertial pos="0.008143516848 0.008373519879 -0.007688703198" mass="0.0213808882923" diaginertia="5.11792511396e-06 7.29553980465e-06 8.21439794079e-06" />
+                <geom name="left_foot_collision" type="mesh" mesh="link_05" contype="2" conaffinity="3" friction=".8 .01 .002" density="0" rgba=".94 .57 .13 1" group="3" />
+                <site name="left_foot" pos="0.00830288463696 0.00770237842209 -0.0241794759586" size=".002" quat="0.999648851004 0.026498578965 0 0" />
+              </body>
+              <inertial pos="-4.189295542e-05 -0.02160284509 -0.02009735268" mass="0.0312489905805" diaginertia="1.26287060259e-05 1.11075693204e-05 3.61041938809e-06" />
+              <geom name="ft_link_04" type="mesh" mesh="link_04" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+            </body>
+            <inertial pos="-0.01259515885 -0.01227341406 -0.02001194304" mass="0.0370053835826" diaginertia="1.77517342547e-05 2.22231748881e-05 1.17936168792e-05" />
+            <geom name="ft_link_03" type="mesh" mesh="link_03" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+          </body>
+          <inertial pos="0.01595241094 0.007922606232 -0.0007232205025" mass="0.0287819650019" diaginertia="4.08224282378e-06 4.28059953966e-06 6.01687979854e-06" />
+          <geom name="ft_link_02" type="mesh" mesh="link_02" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+        </body>
+        <inertial pos="0.001103825277 4.980266652e-06 -0.04445000035" mass="0.0213808882923" diaginertia="3.79332607255e-06 4.58520394633e-06 2.67695953205e-06" />
+        <geom name="ft_link_01" type="mesh" mesh="link_01" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+      </body>
+      <body name="ft_11" pos="0.02191947053 -0.01133871371 0.04939660969" quat="1 -0 0 -0">
+        <joint name="neck_pitch" type="hinge" axis="-3.19527027201e-05 0.999847699602 -0.01745212249" limited="true" range="-0.45 0.45" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+        <body name="ft_12" pos="0.0006662226354 0.0008725465349 0.04998794626" quat="1 -0 0 -0">
+          <joint name="head_pitch" type="hinge" axis="-3.19527027201e-05 0.999847699602 -0.01745212249" limited="true" range="-0.45 0.45" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+          <body name="ft_13" pos="0.0005885704478 0.01226957994 0.04398864618" quat="1 -0 -0 -0">
+            <joint name="head_yaw" type="hinge" axis="-0.0133243504695 -0.0174512589994 -0.999758928564" limited="true" range="-0.4 0.4" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+            <body name="ft_14" pos="-0.04354933791 -0.0002497458974 -0.01091800207" quat="1 0 0 -0">
+              <joint name="head_roll" type="hinge" axis="0.999910299516 0.00113056245002 -0.0133459638602" limited="true" range="-0.25 0.25" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+              <body name="ft_15" pos="0.04330065537 0.01405335776 0.00285708135">
+                <joint name="passive_mouth" type="hinge" axis="-0.0006101717473 0.9992410688 0.0389475821" limited="true" range="0 .35" armature=".00001" damping=".08" stiffness=".2" />
+                <inertial pos="0.01960023424 -0.01329383542 -0.01727974028" mass="0.0115127860042" diaginertia="1.09745280594e-05 6.02929502962e-06 1.12306778076e-05" />
+                <geom name="ft_link_15" type="mesh" mesh="link_15" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+              </body>
+              <inertial pos="0.04837444 0.0002922982978 0.01066895937" mass="0.0723660834403" diaginertia="7.17733033206e-05 0.000112705707046 0.000142351019683" />
+              <geom name="ft_link_14" type="mesh" mesh="link_14" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+            </body>
+            <inertial pos="0 0 0" mass="0.0468734858707" diaginertia="7.06227187027e-06 4.99983849252e-06 4.06236877528e-06" />
+          </body>
+          <inertial pos="0.0002547107881 0.01153230708 0.005665922181" mass="0.0353606998664" diaginertia="6.40035485914e-06 4.14379653841e-06 5.11924231474e-06" />
+          <geom name="ft_link_12" type="mesh" mesh="link_12" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+        </body>
+        <inertial pos="0.0003327445443 0.01168437874 0.02479588819" mass="0.0254925975783" diaginertia="1.21712357405e-05 1.12340348161e-05 2.7963649996e-06" />
+        <geom name="ft_link_11" type="mesh" mesh="link_11" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+      </body>
+      <body name="ft_06" pos="0.002000000175 -0.01750000005 0.04019999978" quat="0.999999846071 2.71469792253e-10 3.14690997123e-11 0.000554850021932">
+        <joint name="right_hip_yaw" type="hinge" axis="-4.892669758e-07 -5.671640708e-08 -1" limited="true" range="-0.848890299899 0.851109700101" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+        <body name="ft_07" pos="-0.01149617604 4.982835693e-06 -0.03994999997" quat="0.999094294891 0.0425510271943 -1.512215837e-08 -2.00762110192e-08">
+          <joint name="right_hip_roll" type="hinge" axis="1 -3.553887971e-07 -4.718149559e-07" limited="true" range="-0.935127756155 0.764872243845" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+          <body name="ft_08" pos="0.008949999281 -0.0484543122 3.019999844e-06" quat="0.998472189154 -2.73313185562e-08 -0.0552565605739 1.53219092575e-09">
+            <joint name="right_hip_pitch" type="hinge" axis="4.946257652e-07 1 -2.772866986e-08" limited="true" range="-1.03943056339 0.660569436613" armature=".002243099" damping=".00806642" stiffness="0" ref="-0.3" />
+            <body name="ft_09" pos="-0.0007516992377 1.056672805e-10 -0.04187893441" quat="0.999992486358 1.91741515027e-09 0.00387649670755 -1.07490097417e-10">
+              <joint name="right_knee" type="hinge" axis="4.946257652e-07 1 -2.772866986e-08" limited="true" range="-0.857753012833 0.842246987167" armature=".002243099" damping=".00806642" stiffness="0" ref="0" />
+              <body name="ft_10" pos="-0.01290644879 0.02745000042 -0.03990391884" quat="0.998992942402 2.21926682339e-08 0.0448675944426 -1.24411871371e-09">
+                <joint name="right_ankle" type="hinge" axis="-4.946257652e-07 -1 2.772866986e-08" limited="true" range="-1.06023467614 0.639765323859" armature=".002243099" damping=".00806642" stiffness="0" ref="-0.3" />
+                <inertial pos="0.006841783799 -0.008604725245 -0.008063223149" mass="0.0213808882923" diaginertia="5.10456317329e-06 7.30142244282e-06 8.21595474959e-06" />
+                <geom name="right_foot_collision" type="mesh" mesh="link_10" contype="2" conaffinity="3" friction=".8 .01 .002" density="0" rgba=".94 .57 .13 1" group="3" />
+                <site name="right_foot" pos="0.00660574866351 -0.00855046865849 -0.0241191345567" size=".002" quat="0.999073019594 -0.0425537870206 0.00649616583465 -0.000276692946318" />
+              </body>
+              <inertial pos="-0.007504389106 0.01770000638 -0.02084711803" mass="0.0312489905805" diaginertia="1.25100031979e-05 1.31293655097e-05 5.78716062723e-06" />
+              <geom name="ft_link_09" type="mesh" mesh="link_09" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+            </body>
+            <inertial pos="-0.009704528244 0.0125999928 -0.0210147155" mass="0.0370053835826" diaginertia="1.73494397307e-05 2.05149748852e-05 9.56031704337e-06" />
+            <geom name="ft_link_08" type="mesh" mesh="link_08" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+          </body>
+          <inertial pos="0.01595241129 -0.007754312647 3.020044923e-06" mass="0.0287819650019" diaginertia="4.01568374129e-06 4.26849083331e-06 5.96242942239e-06" />
+          <geom name="ft_link_07" type="mesh" mesh="link_07" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+        </body>
+        <inertial pos="0.001103824623 4.979989943e-06 -0.04445000001" mass="0.0213808882923" diaginertia="3.79332611096e-06 4.58520394633e-06 2.67695957046e-06" />
+        <geom name="ft_link_06" type="mesh" mesh="link_06" contype="0" conaffinity="0" friction=".8 .01 .002" density="0" rgba=".82 .81 .76 1" group="3" />
+      </body>
+      <site name="imu" pos="0 0 0" size=".002" />
+    </body>
+    <geom name="floor" type="plane" size="2 2 .1" rgba=".15 .22 .29 1" friction=".8 .01 .002" contype="1" conaffinity="2" />
+    <light name="key" pos="1 -1 2" dir="-1 1 -2" diffuse=".9 .9 .9" />
+    <light name="fill" pos="-1 1 1" dir="1 -1 -1" diffuse=".45 .45 .5" />
+  </worldbody>
+  <actuator>
+    <position name="left_hip_yaw" joint="left_hip_yaw" kp="4.8126293" kv=".1407062" ctrlrange="-0.849999901712 0.850000098288" forcerange="-.9226667 .9226667" />
+    <position name="left_hip_roll" joint="left_hip_roll" kp="4.8126293" kv=".1407062" ctrlrange="-0.796996664464 0.903003335536" forcerange="-.9226667 .9226667" />
+    <position name="left_hip_pitch" joint="left_hip_pitch" kp="4.8126293" kv=".1407062" ctrlrange="-0.598707555176 1.10129244482" forcerange="-.9226667 .9226667" />
+    <position name="left_knee" joint="left_knee" kp="4.8126293" kv=".1407062" ctrlrange="-0.836928603555 0.863071396445" forcerange="-.9226667 .9226667" />
+    <position name="left_ankle" joint="left_ankle" kp="4.8126293" kv=".1407062" ctrlrange="-0.585636594129 1.11436340587" forcerange="-.9226667 .9226667" />
+    <position name="neck_pitch" joint="neck_pitch" kp="4.8126293" kv=".1407062" ctrlrange="-0.45 0.45" forcerange="-.9226667 .9226667" />
+    <position name="head_pitch" joint="head_pitch" kp="4.8126293" kv=".1407062" ctrlrange="-0.45 0.45" forcerange="-.9226667 .9226667" />
+    <position name="head_yaw" joint="head_yaw" kp="4.8126293" kv=".1407062" ctrlrange="-0.4 0.4" forcerange="-.9226667 .9226667" />
+    <position name="head_roll" joint="head_roll" kp="4.8126293" kv=".1407062" ctrlrange="-0.25 0.25" forcerange="-.9226667 .9226667" />
+    <position name="right_hip_yaw" joint="right_hip_yaw" kp="4.8126293" kv=".1407062" ctrlrange="-0.848890299899 0.851109700101" forcerange="-.9226667 .9226667" />
+    <position name="right_hip_roll" joint="right_hip_roll" kp="4.8126293" kv=".1407062" ctrlrange="-0.935127756155 0.764872243845" forcerange="-.9226667 .9226667" />
+    <position name="right_hip_pitch" joint="right_hip_pitch" kp="4.8126293" kv=".1407062" ctrlrange="-1.03943056339 0.660569436613" forcerange="-.9226667 .9226667" />
+    <position name="right_knee" joint="right_knee" kp="4.8126293" kv=".1407062" ctrlrange="-0.857753012833 0.842246987167" forcerange="-.9226667 .9226667" />
+    <position name="right_ankle" joint="right_ankle" kp="4.8126293" kv=".1407062" ctrlrange="-1.06023467614 0.639765323859" forcerange="-.9226667 .9226667" />
+  </actuator>
+  <sensor>
+    <gyro name="imu_ang_vel" site="imu" />
+    <velocimeter name="imu_lin_vel" site="imu" />
+    <accelerometer name="imu_acc" site="imu" />
+    <subtreeangmom name="root_angmom" body="trunk_base" />
+    <gyro name="angular-velocity" site="imu" />
+    <framequat name="orientation" objtype="site" objname="imu" />
+  </sensor>
+  <visual>
+    <global offwidth="1280" offheight="960" />
+    <headlight ambient=".3 .3 .3" diffuse=".65 .65 .65" specular=".1 .1 .1" />
+  </visual>
+</mujoco>

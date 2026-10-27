@@ -1,0 +1,61 @@
+{
+  "scope": "OFFLINE_FT_TEACHING_SIMULATION_NOT_HARDWARE_OR_WALKING_ACCEPTANCE",
+  "mode": "inspect",
+  "trunk_fixed": false,
+  "hardware_io": false,
+  "complete": true,
+  "steps": 0,
+  "simulation_seconds": 0.0,
+  "platform": "Windows",
+  "python": "3.12.14",
+  "mujoco": "3.10.0",
+  "numpy": "2.3.5",
+  "model_sha256": "505f88feae5af8824e53896da6ba743487fa2679594622d5adafa30f4fe47b33",
+  "model_manifest_sha256": "0ba38570441f1aba31a00e92547e37558fd42362b749df84fbd32285e03f9c62",
+  "payload_sha256": null,
+  "total_mass_kg": 0.611,
+  "joint_count": 15,
+  "actuator_count": 14,
+  "timestep_s": 0.005,
+  "payload_added": false,
+  "initial_com_world_m": [
+    0.009815294511033803,
+    -0.0002783250349854869,
+    0.13970729042690652
+  ],
+  "final_com_world_m": [
+    0.009815294511033803,
+    -0.0002783250349854869,
+    0.13970729042690652
+  ],
+  "max_tilt_deg": 0.0,
+  "peak_contact_count": 0,
+  "max_target_tracking_error_deg": 0.0,
+  "target_clip_rad": 0.0,
+  "joint_motion_range_deg": {
+    "left_hip_yaw": 0.0,
+    "left_hip_roll": 0.0,
+    "left_hip_pitch": 0.0,
+    "left_knee": 0.0,
+    "left_ankle": 0.0,
+    "neck_pitch": 0.0,
+    "head_pitch": 0.0,
+    "head_yaw": 0.0,
+    "head_roll": 0.0,
+    "right_hip_yaw": 0.0,
+    "right_hip_roll": 0.0,
+    "right_hip_pitch": 0.0,
+    "right_knee": 0.0,
+    "right_ankle": 0.0
+  },
+  "warning_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "interpretation": "Finite integration and reported motion only; no learned policy, real load, voltage dynamics or calibrated START."
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-27",
+  "scope": "Offline regression only; no robot, serial, SSH or motion test",
+  "environment": {
+    "python": "3.12.14",
+    "os": "Windows",
+    "architecture": "AMD64",
+    "numpy": "2.2.6",
+    "pyserial": "3.5"
+  },
+  "test_command": "python -m unittest discover -s tests -v",
+  "tests_run": 34,
+  "failures": 0,
+  "errors": 0,
+  "evidence": "Completed local unittest rerun after onsite-ready wording change: 34 tests in 4.211 seconds, OK. Original test_complete_1_2_3_5_byte_identical checks packet hashes against preserved historical evidence.",
+  "motion_functions_ast_identical_to_v2026_10_26": {
+    "run_cycle": true,
+    "run": true,
+    "restore": true,
+    "capture_start": true,
+    "inspect_device": true,
+    "plan": true,
+    "build_frames": true,
+    "candidate_pitch": true,
+    "validate_device": true
+  },
+  "unchanged_bytes_sha256": {
+    "software/neck.py": "303fe715b540903576fd5a5ce7f9fd5dc748c71106129a3e021e6dbceb755aea",
+    "software/contract.py": "df28aaf520e5d069e428ba2226892bdf34177c1ddd22b41b3d0568110fa76c18",
+    "software/feedback.py": "91246ca1c91ff241be9c227d721168e5a965e188563d0a5955e0f649685e0d3e",
+    "software/imu.py": "1d0e35b0753f1e8455c4baef0638a2c6f0a700576bbdfccbdd639d61879505d9",
+    "software/config/success_20261023.json": "bffa2f68a7679536533b464df975e9994b1d53126d38b2667c861f90df67e728",
+    "software/data/d_trajectory.json": "ba6e30ce15b34cd45f0b4ccc4eec8e2fa1f4902ad17f7462b1804de9bb99be6b",
+    "software/data/provenance.json": "1d9f969e8b720f87a0ae0748b3c4fb7c09f52f378b0b599826ef6fe41a59e4d1",
+    "software/data/offline_equivalence.json": "7f13879cabb06e993e7ae73e3cffe808588311c0fe00966322608f96a8e0097a"
+  },
+  "runtime_sha256": "0a06c2661cf769e640ba17cd1b7e3bb0ad87c81b64b6992b4bd5f5a3892e9fd1",
+  "imu_diagnostics_sha256": "287190d1422ce149a7397c06e5d5ab69fd1ff123874cf11ce442f41a4b865fdb",
+  "ci_status": "Workflow supplied; consult Actions for actual remote run results.",
+  "final_wording_change": "Onsite checkbox and matching validation error now describe either supported airborne testing or self-standing ground testing; same onsite_ready boolean and unchanged execution path.",
+  "app_sha256": "a7468b6d7545b029e406a9ae241da6f07ceb663e9026ae09fcf87347ee21b08c",
+  "web_index_sha256": "1cf710e8c32a302dedeb90fdecac151f20c4e12f7d02571d8404135c1ccf9094"
+}

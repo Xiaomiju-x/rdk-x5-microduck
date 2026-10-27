@@ -1,0 +1,19 @@
+name: 运行问题 / Runtime issue
+description: 报告安装、读取、配置或动作执行问题
+title: '[运行] '
+body:
+  - type: input
+    id: version
+    attributes: {label: '版本、系统与 Python', placeholder: 'Release tag、系统版本、Python/NumPy/pyserial 版本'}
+    validations: {required: true}
+  - type: textarea
+    id: reproduce
+    attributes: {label: '重现步骤与预期结果', description: '使用了哪条命令/哪个按钮？DEMO 或真机？'}
+    validations: {required: true}
+  - type: textarea
+    id: actual
+    attributes: {label: '实际现象与日志', description: '附完整错误、轮次/阶段、供电/结构/参数。删去凭据、私人路径、串口序列号与内网信息。', render: text}
+    validations: {required: true}
+  - type: textarea
+    id: state
+    attributes: {label: '现场状态', description: '若涉及运动，请说明悬空/落地、是否接住、倾倒方向；程序完成不等于稳定。'}

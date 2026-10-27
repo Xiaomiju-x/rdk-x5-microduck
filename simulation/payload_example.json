@@ -1,0 +1,12 @@
+{
+  "purpose": "EXAMPLE_ONLY_NOT_THE_SUCCESSFUL_ROBOT_CONFIGURATION",
+  "coordinate_frame": "trunk frame: x forward, y left, z up; metres",
+  "parts": [
+    {
+      "name": "hypothetical_84g_box",
+      "mass_kg": 0.084,
+      "center_m": [0.06, 0.0, 0.0],
+      "full_size_m": [0.019, 0.07, 0.04]
+    }
+  ]
+}

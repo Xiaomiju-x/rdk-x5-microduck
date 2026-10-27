@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27",
+  "environment": "fresh virtualenv installed from requirements.txt",
+  "platform": "Windows",
+  "python": "3.12.14",
+  "mujoco": "3.10.0",
+  "numpy": "2.3.5",
+  "pillow": "12.3.0",
+  "test_command": "python -m unittest -v test_simulation",
+  "test_returncode": 0,
+  "test_output": "test_bounded_joint_probe_integrates_without_warning (test_simulation.SimulationTest.test_bounded_joint_probe_integrates_without_warning) ... ok\ntest_payload_mass_is_additive (test_simulation.SimulationTest.test_payload_mass_is_additive) ... ok\ntest_reference_assets_and_actor_contract (test_simulation.SimulationTest.test_reference_assets_and_actor_contract) ... ok\ntest_suspended_model_removes_only_root_degree_of_freedom (test_simulation.SimulationTest.test_suspended_model_removes_only_root_degree_of_freedom) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.223s\n\nOK\n",
+  "hardware_io": false,
+  "external_robot_connections": false,
+  "packages": {
+    "absl-py": "2.5.1",
+    "etils": "1.14.0",
+    "fsspec": "2026.9.0",
+    "glfw": "2.11.0",
+    "mujoco": "3.10.0",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "PyOpenGL": "3.1.10",
+    "typing_extensions": "4.16.0",
+    "zipp": "4.1.2"
+  }
+}

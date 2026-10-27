@@ -1,0 +1,444 @@
+{
+  "schema": 1,
+  "scope": "28 selected rigid FT body meshes, excluding upstream object 52 replaced by R8A L1",
+  "units": "mm",
+  "upstream_repository": "https://github.com/fanhao375/microduck-replica-cad",
+  "upstream_commit": "22ecf4daea158f2dfad7b633f730a5c04f1e04e0",
+  "upstream_release": "https://github.com/fanhao375/microduck-replica-cad/releases/tag/v2.0",
+  "upstream_3mf_sha256": "de34a7808f97b3cc2b66dd24db94ddbe2fcd3b18691562f48dad3a094ecb5862",
+  "upstream_packages": [
+    {
+      "name": "SolidWorks-FT.zip",
+      "sha256": "13764d844acec914b9e90fbf18f611d3d1c60b845a160710e0d694701cdba9b1"
+    },
+    {
+      "name": "STEP-changed-parts-FT.zip",
+      "sha256": "cf137cd3c20b1ee115c5ba71993b42a993c9da337551a7f691d77870f5a61b0a"
+    }
+  ],
+  "attribution": "机械行者Robo / fanhao375 (FT CAD), Pollen Robotics (MicroDuck ecosystem), RDK X5 MicroDuck / CanNyCat (selection and printing preparation)",
+  "license": "CC-BY-NC-SA-4.0",
+  "mesh_changes_this_release": "none; copied frozen prepared meshes with SHA equality",
+  "files": [
+    {
+      "source_object_id": 10,
+      "file": "G04_010_bottom.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "bottom_head_shell_头部下壳.stl",
+      "sha256": "29b384ae78656c39be5d2332b44f9d43478b63ed07e341a0db37880f407915dd",
+      "extents_mm": [
+        91.76302340000001,
+        116.74827579999999,
+        20.1362572
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 12,
+      "file": "G03_012_foot.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "foot_left_左脚.stl",
+      "sha256": "cd0d65cddf70a6971d7c3cd34dca314331d8d59cf7bbe58fc60168e6569c9bf0",
+      "extents_mm": [
+        40.0855026,
+        53.9999962,
+        16.90901948
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 14,
+      "file": "G03_014_foot.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "foot_right_右脚.stl",
+      "sha256": "b3ee2d8b0cfa4b649fe3c1915bf0105082ff94b41e55b78bcbc8d3712ed16cf0",
+      "extents_mm": [
+        40.08550259999999,
+        53.9999962,
+        16.90901948
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 16,
+      "file": "G01_016_hip.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "hip_l_髋部左.stl",
+      "sha256": "b4c63884ef5ed529727a286f97323acbb5a5ecdc8fe1f9a785d78a67d0242f3f",
+      "extents_mm": [
+        19.000172700132367,
+        34.50000457965558,
+        32.450116295935885
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 19,
+      "file": "G01_019_hip.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "hip_l_髋部左.stl",
+      "sha256": "b4c63884ef5ed529727a286f97323acbb5a5ecdc8fe1f9a785d78a67d0242f3f",
+      "extents_mm": [
+        19.000172700132367,
+        34.50000457965558,
+        32.450116295935885
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 21,
+      "file": "G05_021_jaw.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "jaw_下巴.stl",
+      "sha256": "2b4f2177b57c03e4c9bfdcf196d3dbf732443af13ed2ba708fb1e5e669e4352e",
+      "extents_mm": [
+        91.4158478,
+        68.7104874,
+        29.4476604
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 23,
+      "file": "G06_023_left.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "left_shell_左壳.stl",
+      "sha256": "833a2c5554885749f98f699bb1d5349376e2638a1510f14b2dda0f3804612029",
+      "extents_mm": [
+        41.66512442220767,
+        80.89006785084024,
+        33.96717215884027
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 27,
+      "file": "G01_027_motor.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "motor_support_电机支架.stl",
+      "sha256": "b8e5a15fdc30b84780689ee3cb34b6ba173707e38a41c667d96da1d1df89b55e",
+      "extents_mm": [
+        73.50000759999999,
+        54.20000079999997,
+        18.79999924
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 29,
+      "file": "G05_029_neck.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "neck_pitch_颈部俯仰.stl",
+      "sha256": "88317bd6d319ef650319ae5910ad692e0d5ffb1ca845b8f1c2e6d21cfe1d1eb0",
+      "extents_mm": [
+        35.0,
+        18.0,
+        27.6931152
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 31,
+      "file": "G05_031_neck.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "neck_颈部.stl",
+      "sha256": "cbfee3eaf107aefdb65c7489b7e29af69184f0a7ead30a402851efd6f17d6a95",
+      "extents_mm": [
+        11.0,
+        20.000001999999995,
+        2.0000000000000027
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 32,
+      "file": "G05_032_neck.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "neck_颈部.stl",
+      "sha256": "cbfee3eaf107aefdb65c7489b7e29af69184f0a7ead30a402851efd6f17d6a95",
+      "extents_mm": [
+        11.0,
+        20.000001999999995,
+        2.0000000000000027
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 34,
+      "file": "G05_034_noenoeil.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "noenoeil_眼睛.stl",
+      "sha256": "5bf78e2ec606f6d9a406e7f59986691fde21d177153f61d59104cbff192b4b88",
+      "extents_mm": [
+        30.0,
+        30.000000000000014,
+        9.500000960000005
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 38,
+      "file": "G06_038_right.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "right_shell_右壳.stl",
+      "sha256": "12f686efba44ab8b02ecd4719a389e04f48975ec746d90afc241f2cc522b953a",
+      "extents_mm": [
+        41.669011548629896,
+        80.89784693109965,
+        32.009152462161765
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 50,
+      "file": "G04_050_top.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "top_head_shell_头部上壳.stl",
+      "sha256": "9a6a512f455f80cfc53271d540ac13bda7742d00b7d66ffc9b16a2b6ea91ee1a",
+      "extents_mm": [
+        91.75945997582767,
+        62.020478093966574,
+        116.0289335364633
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 54,
+      "file": "G01_054_yaw2roll.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "yaw2roll_偏航转横滚.stl",
+      "sha256": "1337b0efa7b4148cd53ee755d01abf4c156d5f2ea9fb7f0f39909cc243d91552",
+      "extents_mm": [
+        23.0,
+        20.5,
+        25.800000190734863
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 56,
+      "file": "G04_056_face.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "face_part_面部零件.stp",
+      "sha256": "0e97ce48034479d7e055eee9c7df3d9057546d3922dea0375fc7f78fce3d0e16",
+      "extents_mm": [
+        87.6506958,
+        44.6264802,
+        12.500000000000009
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 59,
+      "file": "G01_059_yaw2roll.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "yaw2roll_偏航转横滚.stl",
+      "sha256": "1337b0efa7b4148cd53ee755d01abf4c156d5f2ea9fb7f0f39909cc243d91552",
+      "extents_mm": [
+        23.0,
+        20.5,
+        25.800000190734863
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 69,
+      "file": "G02_069_ankle.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "ankle_right脚踝右.STEP",
+      "sha256": "8997a3770786349c34bafe214cb1c6d70c3211db9163e317375f15e3fb43c838",
+      "extents_mm": [
+        36.52242280000001,
+        39.5,
+        25.5
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 71,
+      "file": "G02_071_ankle.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "ankle_left_脚踝左.STEP",
+      "sha256": "4d630e65a5726eb38df866a58ca33b3cca600e9859ce4d790347e0a55a062164",
+      "extents_mm": [
+        36.522422800000015,
+        39.5,
+        25.5
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 73,
+      "file": "G02_073_right.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "right_upper_leg_右上腿-FT.STEP",
+      "sha256": "85268943905347f716574fd30dd7d4d29e93f251a09e51f7d2d003a903de07fb",
+      "extents_mm": [
+        60.99600220000002,
+        47.658001,
+        27.99800100000001
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 75,
+      "file": "G02_075_left.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "frozen upstream FT 3MF mesh",
+      "source_name": "left_upper_leg_左上腿-FT.STEP",
+      "sha256": "e7cf801974e7b0d82a2df677d5cfe0deae65f12d98b99efb6ac7c105b29ef261",
+      "extents_mm": [
+        60.99600220000002,
+        47.658001000000006,
+        28.000000000000007
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 77,
+      "file": "G02_077_01-upper.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "01-upper_leg_rigidity_plate_上腿加固板-FT.STEP",
+      "sha256": "edbb7de036c43c9c81a96048e19e82e5c13e8865e00d47f8045b517139679c38",
+      "extents_mm": [
+        58.462846755981445,
+        45.1875,
+        2.0
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 78,
+      "file": "G02_078_01-upper.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "01-upper_leg_rigidity_plate_上腿加固板-FT.STEP",
+      "sha256": "edbb7de036c43c9c81a96048e19e82e5c13e8865e00d47f8045b517139679c38",
+      "extents_mm": [
+        58.462846755981445,
+        45.1875,
+        2.0
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 80,
+      "file": "G05_080_99-yaw.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "99-yaw_roll_motion_偏航横滚运动-F.STEP",
+      "sha256": "3a123e6a56c2b02b65d8aacf7f36e65ace577aeacd17ddd33f3b50cea116e506",
+      "extents_mm": [
+        34.0,
+        35.89999961853027,
+        22.5
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 82,
+      "file": "G01_082_bearing.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "bearing_roll_轴承滚轮-FT.STEP",
+      "sha256": "219576861fc9debe5e40e60ef8de4c570ec3dea3cea7f79f7265f842710a8147",
+      "extents_mm": [
+        23.0,
+        40.0,
+        3.5
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 84,
+      "file": "G02_084_leg.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "leg_腿部-FT.STEP",
+      "sha256": "69e4438d39b84fc6d39c7fa6d85f9aab078e5ce0f20a859322bbbfaaee335b89",
+      "extents_mm": [
+        57.999996185302734,
+        20.0,
+        7.950000762939453
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 85,
+      "file": "G01_085_bearing.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "bearing_roll_轴承滚轮-FT.STEP",
+      "sha256": "219576861fc9debe5e40e60ef8de4c570ec3dea3cea7f79f7265f842710a8147",
+      "extents_mm": [
+        23.0,
+        40.0,
+        3.5
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "source_object_id": 86,
+      "file": "G02_086_leg.stl",
+      "quantity": 1,
+      "material": "PLA",
+      "source_kind": "FT STEP",
+      "source_name": "leg_腿部-FT.STEP",
+      "sha256": "69e4438d39b84fc6d39c7fa6d85f9aab078e5ce0f20a859322bbbfaaee335b89",
+      "extents_mm": [
+        57.999996185302734,
+        20.0,
+        7.950000762939453
+      ],
+      "license": "CC-BY-NC-SA-4.0"
+    }
+  ]
+}

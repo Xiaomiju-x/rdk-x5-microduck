@@ -2,6 +2,8 @@
 
 本次完整方案的推荐软件入口：单一 D 控制台、板端串口运行、400 帧相对轨迹、分段颈部角度、提前收颈、完整单轮与连续 2/3/5 轮、只读检查及托稳慢复位。
 
+建议从 [v2026.10.27 固定 Release](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27) 开始。首次复刻按 [FIRST_RUN](../docs/FIRST_RUN.md) 完成编号、站姿和 IMU 方向；完整安装命令在 [DEPLOYMENT](../DEPLOYMENT.md)。
+
 **10 月 23 日实机成功的是当时的完整集成与参数。这里的便携运行包从该实现提取，已做离线轨迹、算法和串口目标包对照，未在发布过程中新增实机试跑。** 参数不是所有复刻机器通用的标定值。连续多轮功能已完成软件检查，连续稳定行走仍需实物验证。
 
 ## 无硬件快速预览
@@ -9,7 +11,7 @@
 需要 Python 3.10+。进入本目录，在自己的虚拟环境运行：
 
 ```sh
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-tested.txt
 python -m unittest discover -s tests -v
 python runtime.py plan --cycles 5
 python app.py --demo --port 9194
@@ -66,6 +68,7 @@ ssh -L 9194:127.0.0.1:9194 your_user@your_x5_address
 |---|---|
 |`app.py`、`web/`|仅 D 的微调台；默认 DEMO，硬件模式显式选配置|
 |`runtime.py`|计划、只读检查、姿态捕获、托稳复位、有限轮数运行|
+|`imu_diagnostics.py`|独立 IMU 只读检查：两类包频率、轴向、前后倾与数据年龄；不碰舵机|
 |`neck.py`|原颈部算法，只修改导入路径|
 |`contract.py`|原 D 的包格式、范围、每拍速率检查|
 |`feedback.py`、`bounded_read.py`、`confirm_write.py`|真实反馈、有限读取重试、写超时只读确认|
@@ -78,6 +81,24 @@ ssh -L 9194:127.0.0.1:9194 your_user@your_x5_address
 |`vendor/feetech.py`|上游总线实现，来源和许可见下文|
 
 配置、保存参数、逐轮记录位于 `.local/`，默认已忽略，不要将设备标识和未审阅日志提交到公共仓库。
+
+## IMU 独立检查
+
+填好本机 `imu_port`、`imu_baud` 和候选 `body_from_sensor_rotation` 后，可在尚未确认安装标志时只读验证：
+
+```sh
+python runtime.py imu-check --robot .local/robot.json --seconds 8
+```
+
+不打开舵机口、不使能、不写目标、不改配置。每约 0.25 秒输出传感器欧拉角/角速度、机体重力/角速度、相对首帧的 `pitch_delta_deg`、数据年龄；结束统计 0x53 和 0x52 的主机接收频率。正的 pitch_delta 表示前倾，负值后倾，必须与支撑状态下的实际倾斜对照。示例矩阵和输出含义见 [FIRST_RUN 的 IMU 部分](../docs/FIRST_RUN.md#5-imu安装方向与只读验证)。
+
+`inspect` 只读舵机，`imu-check` 只读独立 IMU。前者通过不代表后者已通过。结束其他占用 IMU 口的任务后再运行检查；工具不自动将验证标志设为 true。
+
+## 本版离线环境与检查
+
+2026-10-27 在 Windows x86_64、CPython 3.12.14、NumPy 2.2.6、pyserial 3.5 通过 34 项回归（原 24 项 + 10 项 IMU 诊断）。`requirements-tested.txt` 固定此依赖组合；原 `requirements.txt` 保留兼容范围。CI 会在 Windows/Linux、Python 3.10/3.12 运行，不以配置存在代替远端通过记录。
+
+本版新增诊断 CLI 和教程，没有修改 D 数据、neck 算法、成功预设或动作函数。1/2/3/5 轮位置包的原 SHA 断言仍通过。`data/offline_equivalence.json` 是 10 月 26 日原版本历史证据，里面的 runtime 文件 SHA 对应该版本；新增代码的回归证据见 `verification/offline_20261027.json`。
 
 ## 停止与复位
 

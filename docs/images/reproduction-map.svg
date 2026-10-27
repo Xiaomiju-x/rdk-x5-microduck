@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1210" viewBox="0 0 2400 1210">
+<rect width="100%" height="100%" fill="#f4f7fb"/>
+<rect x="0" y="0" width="2400" height="230" rx="0" fill="#12273b" stroke="none" stroke-width="2"/>
+<text x="72" y="59" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#5ed3bb">RDK X5 DUCK  /  OPEN ROBOTICS CASE</text>
+<text x="72" y="139" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="59" font-weight="700" fill="white">从零复刻：每一步都有可检查的结果</text>
+<text x="76" y="191" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="400" fill="#d4e2ed">先走通硬件和软件基础，再做单轮实机；离线仿真与RL研究有独立入口。</text>
+<rect x="75" y="300" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="97" y="324" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="110" y="361" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">01</text>
+<text x="175" y="360" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">获取固定版本</text>
+<text x="105" y="436" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">下载完整Release</text>
+<text x="105" y="479" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">核对文件与版本</text>
+<rect x="95" y="515" width="485" height="62" rx="12" fill="#eaf4f0" stroke="none" stroke-width="2"/>
+<text x="112" y="557" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#008d80">产出：拿到同一套资料</text>
+<polyline points="600,442 643,442" stroke="#526b7d" fill="none" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="643,442 627.2035138859733,450.62965969487567 627.2035138859733,433.37034030512433" fill="#526b7d"/>
+<rect x="650" y="300" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="672" y="324" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="685" y="361" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">02</text>
+<text x="750" y="360" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">采购与打印</text>
+<text x="680" y="436" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">BOM / 28个本体硬件件</text>
+<text x="680" y="479" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">R8A六件 / TPU两件</text>
+<rect x="670" y="515" width="485" height="62" rx="12" fill="#eaf4f0" stroke="none" stroke-width="2"/>
+<text x="687" y="557" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#008d80">产出：零件、五金与工具齐全</text>
+<polyline points="1175,442 1218,442" stroke="#526b7d" fill="none" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1218,442 1202.2035138859733,450.62965969487567 1202.2035138859733,433.37034030512433" fill="#526b7d"/>
+<rect x="1225" y="300" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1247" y="324" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="1260" y="361" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">03</text>
+<text x="1325" y="360" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">装配与接线</text>
+<text x="1255" y="436" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">机械 → 双路电源 → 总线</text>
+<text x="1255" y="479" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">核对舵机ID与传感器</text>
+<rect x="1245" y="515" width="485" height="62" rx="12" fill="#eaf4f0" stroke="none" stroke-width="2"/>
+<text x="1262" y="557" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#008d80">产出：无干涉，15轴可读</text>
+<polyline points="1750,442 1793,442" stroke="#526b7d" fill="none" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1793,442 1777.2035138859733,450.62965969487567 1777.2035138859733,433.37034030512433" fill="#526b7d"/>
+<rect x="1800" y="300" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1822" y="324" width="58" height="58" rx="16" fill="#008d80" stroke="none" stroke-width="2"/>
+<text x="1835" y="361" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">04</text>
+<text x="1900" y="360" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">离线体验软件</text>
+<text x="1830" y="436" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">DEMO / 测试 / plan</text>
+<text x="1830" y="479" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">不需要接鸭子</text>
+<rect x="1820" y="515" width="485" height="62" rx="12" fill="#eaf4f0" stroke="none" stroke-width="2"/>
+<text x="1837" y="557" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#008d80">产出：看懂一轮与参数</text>
+<rect x="75" y="690" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="97" y="714" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="110" y="751" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">05</text>
+<text x="175" y="750" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">建立本机配置</text>
+<text x="105" y="826" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">串口 / ID方向 / offset</text>
+<text x="105" y="869" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">START / IMU安装映射</text>
+<rect x="95" y="905" width="485" height="62" rx="12" fill="#e8f2fa" stroke="none" stroke-width="2"/>
+<text x="112" y="947" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#2477b6">产出：只读检查结果一致</text>
+<polyline points="600,832 643,832" stroke="#526b7d" fill="none" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="643,832 627.2035138859733,840.6296596948756 627.2035138859733,823.3703403051244" fill="#526b7d"/>
+<rect x="650" y="690" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="672" y="714" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="685" y="751" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">06</text>
+<text x="750" y="750" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">悬空与单轮验证</text>
+<text x="680" y="826" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">托稳慢复位 → 悬空检查</text>
+<text x="680" y="869" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">落地接护 → 单轮观察</text>
+<rect x="670" y="905" width="485" height="62" rx="12" fill="#e8f2fa" stroke="none" stroke-width="2"/>
+<text x="687" y="947" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#2477b6">产出：记录真实前移与收步</text>
+<polyline points="1175,832 1218,832" stroke="#526b7d" fill="none" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1218,832 1202.2035138859733,840.6296596948756 1202.2035138859733,823.3703403051244" fill="#526b7d"/>
+<rect x="1225" y="690" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1247" y="714" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="1260" y="751" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">07</text>
+<text x="1325" y="750" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">微调与重复测试</text>
+<text x="1255" y="826" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">起步角 / 走动角 / 收颈</text>
+<text x="1255" y="869" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">一次一项，保存观察</text>
+<rect x="1245" y="905" width="485" height="62" rx="12" fill="#e8f2fa" stroke="none" stroke-width="2"/>
+<text x="1262" y="947" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#2477b6">产出：可比较、可回退</text>
+<polyline points="1750,832 1793,832" stroke="#526b7d" fill="none" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1793,832 1777.2035138859733,840.6296596948756 1777.2035138859733,823.3703403051244" fill="#526b7d"/>
+<rect x="1800" y="690" width="525" height="300" rx="24" fill="white" stroke="#d9e3eb" stroke-width="2"/>
+<rect x="1822" y="714" width="58" height="58" rx="16" fill="#2477b6" stroke="none" stroke-width="2"/>
+<text x="1835" y="751" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="white">08</text>
+<text x="1900" y="750" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="33" font-weight="700" fill="#18334a">扩展研究</text>
+<text x="1830" y="826" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">整轮重复 / 减线 / 单电池</text>
+<text x="1830" y="869" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" font-weight="400" fill="#526b7d">长距离 / RL实时闭环</text>
+<rect x="1820" y="905" width="485" height="62" rx="12" fill="#e8f2fa" stroke="none" stroke-width="2"/>
+<text x="1837" y="947" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" font-weight="700" fill="#2477b6">产出：各自形成验证记录</text>
+<text x="75" y="1118" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="400" fill="#7356af">仿真支线：加载FT模型 → 核对关节和单位 → 小幅动作 → 质量/执行器辨识 → 再进入策略训练。</text>
+<text x="75" y="1168" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#526b7d">成功视频、公开包离线检查、仿真结果和新机实测分别记录，避免把不同验证混在一起。</text>
+</svg>

@@ -289,10 +289,11 @@ def restore(cfg,progress=lambda _:None,cancel=lambda:None,record_dir=HERE/'.loca
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action',choices=['plan','inspect','capture','restore','run'])
+    parser.add_argument('action',choices=['plan','inspect','imu-check','capture','restore','run'])
     parser.add_argument('--robot');parser.add_argument('--parameters');parser.add_argument('--cycles',type=int,default=1,choices=[1,2,3,5])
     parser.add_argument('--output',default='.local/robot.json');parser.add_argument('--supported',action='store_true')
     parser.add_argument('--onsite-ready',action='store_true');parser.add_argument('--partial',action='store_true')
+    parser.add_argument('--seconds',type=float,default=5.,help='Read-only imu-check duration, 1..60 seconds')
     args=parser.parse_args();cfg=read_json(args.robot) if args.robot else None
     params=read_json(args.parameters) if args.parameters else defaults()
     stop=threading.Event()
@@ -302,7 +303,11 @@ def main():
     def report(row):print(json.dumps(row,ensure_ascii=False),flush=True)
     if args.action=='plan':report(plan(cfg,params,args.cycles));return
     if cfg is None:parser.error('--robot is required for serial access')
-    if args.action=='inspect':result=inspect_device(cfg)
+    if args.action=='imu-check':
+        from imu_diagnostics import inspect_imu
+        with ownership(cfg.get('imu_port',''),HERE/'.local/locks'):
+            result=inspect_imu(cfg,args.seconds,report,cancel)
+    elif args.action=='inspect':result=inspect_device(cfg)
     elif args.action=='capture':result=capture_start(cfg,args.output)
     elif args.action=='restore':
         if not args.supported:parser.error('Restore requires --supported and physical support/unloaded feet')

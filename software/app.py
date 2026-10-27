@@ -36,7 +36,7 @@ class Manager:
         if action not in ('run','restore','partial_restore','inspect'):raise ValueError('Unknown action')
         if action!='run' and cycles!=1:raise ValueError('Only run supports multiple cycles')
         params=validate_parameters(request.get('parameters',self.parameters))
-        if action=='run' and request.get('onsite_ready') is not True:raise ValueError('请确认已站稳、留空位并在旁接护')
+        if action=='run' and request.get('onsite_ready') is not True:raise ValueError('请确认本轮现场已准备：悬空时托稳且双腿自由；落地时自行站稳并留空位。线缆松弛，全程在旁接护')
         if action in ('restore','partial_restore') and request.get('supported') is not True:raise ValueError('请先托稳躯干和头部、双脚卸重')
         if self.cfg and action!='inspect':runtime.validate_device(self.cfg,motion=True,imu=action=='run')
         if action=='run':runtime.plan(self.cfg,params,cycles)
