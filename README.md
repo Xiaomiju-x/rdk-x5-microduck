@@ -30,7 +30,7 @@
 
 ![硬件、软件、机载执行与仿真研究全景](docs/images/system-framework.png)
 
-图中供电对应已有双电池行走基线。最新单电源保留同一数据链路，供电接线见[单电池专章](docs/SINGLE_POWER_R9.md#chapter-21)。
+图中供电对应已有双电池行走基线。最新单电源保留同一数据链路，供电接线见[单电池专章](docs/SINGLE_POWER_R9.md#21后续主线一复用现有电池做单电源集成)。
 
 RDK X5运行机载Linux/Python程序，通过USB与微雪 Bus Servo Adapter (A)连接，控制15轴飞特HD1910M，并读取JY901S IMU。电脑浏览器通过SSH隧道访问控制台。当前成功路线使用D相对目标序列和颈部时序配合；离线MuJoCo环境提供模型观察与关节实验，RL闭环为独立推进路线。
 
