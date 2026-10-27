@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-27",
+  "project": "RDK X5 Duck",
+  "evidence_type": "operator_report",
+  "source": "项目现场操作者反馈，非本次发布过程中的独立仪器测量",
+  "configuration": "复用现有成品5V舵机电池，通过微雪Bus Servo Adapter (A)的DC+/DC−分供X5与舵机",
+  "confirmed": [
+    "X5正常供电与启动",
+    "15个舵机正常供电与启动"
+  ],
+  "pending": [
+    "单电池带载行走",
+    "连续运行",
+    "X5板端动态电压",
+    "温升与续航",
+    "R9实配"
+  ],
+  "prior_walk_evidence": "2026-10-23短距离前进视频仍对应双电池配置",
+  "new_robot_actions_during_publication": 0
+}

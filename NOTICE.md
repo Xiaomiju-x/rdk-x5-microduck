@@ -48,3 +48,9 @@ CAD仓库版本及素材许可证应在下载时再次核对。源模型和作�
 - https://github.com/apirrone/Open_Duck_reference_motion_generator
 - https://www.apache.org/licenses/LICENSE-2.0
 - https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+## 2026-10-27手册同步新增图示
+
+`docs/images/r9/R9_side.png`、`R9_four_parts.png`为本项目R9候选结构渲染，包含FT衍生几何，按CC BY-NC-SA4.0保留机械行者Robo / fanhao375、Pollen Robotics与本项目改动的署名。`power_wiring.svg`与PNG为本项目独立接线示意，随原创说明按Apache-2.0使用；针脚与接口依据厂商公开文档，不包含厂家内部板卡CAD。
+
+本次手册图片复用既有FT装配图及成功媒体，许可不变。R9图表示设计与布局，不是实配或强度验收。本次更新没有发布新的R9制造文件或改动旧Release资产。

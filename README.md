@@ -6,7 +6,15 @@
 
 [![点击查看全机载短距离前进视频](docs/images/video-cover.jpg)](media/20261023/onboard-short-walk.mp4)
 
-**[阅读完整案例](docs/FULL_SOLUTION.md) · [下载固定版本 v2026.10.27.1](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1) · [地瓜社区主帖](https://forum.d-robotics.cc/t/topic/35728/1)**
+**[阅读24章完整复刻手册](docs/FULL_SOLUTION.md) · [下载固定版本 v2026.10.27.1](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1) · [地瓜社区主帖](https://forum.d-robotics.cc/t/topic/35728/1)**
+
+## 最新进展 · 2026-10-27
+
+**单电池供电启动已实测：**复用现有成品5V舵机电池，经微雪DC+/DC−分供，X5和15个舵机均能正常供电、启动；暂不增加降压或稳压模块。[本次进度](progress/2026-10-27/README.md) · [接线与R9布局](docs/SINGLE_POWER_R9.md)
+
+完整教程已与地瓜社区同步为**六篇24章**，覆盖硬件、机械装配、软件、标定、调试和MuJoCo仿真。后续顺序是 **R9实配 → 单电池带载验证 → 线束整理 → 单轮复现与长距离 → RL闭环**。
+
+上面的成功行走视频仍是10月23日双电池样机；最新单电源结果确认到供电启动。固定v2026.10.27.1保留原运行/打印基线，新手册与进度在main更新，R9实配、单电池带载和连续运行尚待验证。
 
 ## 选一个入口开始
 
@@ -21,6 +29,8 @@
 ## 完整框架
 
 ![硬件、软件、机载执行与仿真研究全景](docs/images/system-framework.png)
+
+图中供电对应已有双电池行走基线。最新单电源保留同一数据链路，供电接线见[单电池专章](docs/SINGLE_POWER_R9.md#chapter-21)。
 
 RDK X5运行机载Linux/Python程序，通过USB与微雪 Bus Servo Adapter (A)连接，控制15轴飞特HD1910M，并读取JY901S IMU。电脑浏览器通过SSH隧道访问控制台。当前成功路线使用D相对目标序列和颈部时序配合；离线MuJoCo环境提供模型观察与关节实验，RL闭环为独立推进路线。
 
@@ -42,11 +52,11 @@ python app.py --demo --port 9194
 
 | 类别 | 内容 |
 |---|---|
-| 硬件 | [BOM与接口](HARDWARE.md)、[采购与备件](docs/PROCUREMENT.md)、两路供电与总线分支、15轴方向表 |
+| 硬件 | [BOM与接口](HARDWARE.md)、[采购与备件](docs/PROCUREMENT.md)、双电池基线与[单电源进展](docs/SINGLE_POWER_R9.md)、15轴方向表 |
 | 结构 | [FT本体选定件与R8A改件](mechanical/README.md)、STEP/FCStd/STL、PLA与TPU可编辑打印工程、[详细装配](ASSEMBLY.md) |
 | 软件 | [D公开运行包](software/README.md)、相对轨迹、分段颈部控制、独立IMU只读检查、[逐机部署](DEPLOYMENT.md) |
 | 仿真 | [MuJoCo环境](SIMULATION.md)、FT教学模型、CPU小幅关节实验、模型来源与研究边界 |
-| 实机证据 | [10月23日短距离结果](progress/2026-10-23/README.md)、完整视频/正侧照片、成功参数 |
+| 实机证据 | [10月23日短距离结果](progress/2026-10-23/README.md)、完整视频/正侧照片、成功参数；[10月27日单电池启动](progress/2026-10-27/README.md) |
 | 复刻与共建 | [首次运行](docs/FIRST_RUN.md)、[检查表](docs/BUILD_CHECKLIST.md)、Issue模板、自动化测试、[贡献指南](CONTRIBUTING.md) |
 
 ## 当前验证状态
@@ -57,7 +67,8 @@ python app.py --demo --port 9194
 | 公开D运行包 | 离线检查，1/2/3/5轮与原运行器的位置包等价；本次文档升级未代跑实机 |
 | 连续2/3/5轮 | 执行完整单轮后再下一轮，软件验证完成，多轮实机效果待验证 |
 | FT教学仿真 | 模型加载与小幅关节实验；不作为成功D或RL走稳证明 |
-| 单电池、线束优化、长距离、RL闭环 | 按[路线与验收目标](ROADMAP.md)推进 |
+| 单电池供电启动 | 10月27日现场确认X5与15舵机均可正常供电启动；带载、连续运行待验证 |
+| R9、线束优化、长距离、RL闭环 | R9已设计/切片/送印，按[统一路线与验收目标](ROADMAP.md)继续 |
 
 成功单轮参数保持：启动0°、走动请求−30°、保持0秒、过渡0.2秒、提前收颈1.1秒、自动前/后反馈0。请求角度不等于实物实际角度，新机不能直接复用原型的绝对START。
 
