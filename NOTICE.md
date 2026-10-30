@@ -54,3 +54,7 @@ CAD仓库版本及素材许可证应在下载时再次核对。源模型和作�
 `docs/images/r9/R9_side.png`、`R9_four_parts.png`为本项目R9候选结构渲染，包含FT衍生几何，按CC BY-NC-SA4.0保留机械行者Robo / fanhao375、Pollen Robotics与本项目改动的署名。`power_wiring.svg`与PNG为本项目独立接线示意，随原创说明按Apache-2.0使用；针脚与接口依据厂商公开文档，不包含厂家内部板卡CAD。
 
 本次手册图片复用既有FT装配图及成功媒体，许可不变。R9图表示设计与布局，不是实配或强度验收。本次更新没有发布新的R9制造文件或改动旧Release资产。
+
+## 南瓜鸭结项档案（2026-10-30）
+
+`projects/pumpkin-duck/` 为已经结束的万圣节外观互动副线。文字按 Apache-2.0；实拍与 FT 接口衍生面具结构按 CC BY-NC-SA 4.0，署名周苓萱（Lingxuan Zhou / CanNyCat）并保留机械行者Robo / fanhao375、Pollen Robotics 的来源。面具选件原样归档，没有混入被替代的半孔前抱箍或旧语音托架。见[该目录 NOTICE](projects/pumpkin-duck/NOTICE.md)及逐文件 manifest。未重新分发完整第三方资源、引擎、权重或其他组的活动终稿。

@@ -1,0 +1,158 @@
+{
+  "schema": "pumpkin-mask-archive-v1",
+  "closed_on": "2026-10-30",
+  "scope": "9 selected existing part geometries, STEP and STL; includes fit gauge; not a complete validated robot kit",
+  "superseded_parts_excluded": [
+    "P01_front_collar",
+    "P05_OV2710_camera_cradle",
+    "P06_CI1302_voice_cradle",
+    "P07_voice_spacer_left",
+    "P07_voice_spacer_right"
+  ],
+  "files": [
+    {
+      "file": "P00_fit_gauge.step",
+      "source": "R1/output/parts/P00_fit_gauge.step",
+      "bytes": 18491,
+      "sha256": "6ccd77a6afff8311751fc6a485c7f2ccc277f419ce0ac4d21460060f808c52dd",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P00_fit_gauge.stl",
+      "source": "R1/output/parts/P00_fit_gauge.stl",
+      "bytes": 114284,
+      "sha256": "8893399cc5483a193ef7fead02849cf30e53945cde0239e7ac4ef9c5e8d4c089",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P01_front_collar_R1c_closed_holes.step",
+      "source": "R1/collar_closed_holes_20261015/parts/P01_front_collar_R1c_closed_holes.step",
+      "bytes": 242891,
+      "sha256": "fa185da48e62fd5f36a9624137c017dcd9d5c827f6d7e6fc3da37bc4c2e225db",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P01_front_collar_R1c_closed_holes.stl",
+      "source": "R1/collar_closed_holes_20261015/parts/P01_front_collar_R1c_closed_holes.stl",
+      "bytes": 116284,
+      "sha256": "566bd60510d0df1a3530550ef8336fe67f91a6645ce2982c89c7510ef72dae2a",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P02_rear_collar.step",
+      "source": "R1/output/parts/P02_rear_collar.step",
+      "bytes": 274161,
+      "sha256": "16c6a28d80af400918127226024b8494cd7150294713974f9b576d90027bb683",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P02_rear_collar.stl",
+      "source": "R1/output/parts/P02_rear_collar.stl",
+      "bytes": 64284,
+      "sha256": "e285eafda1612e952078d437add3c347f8de20d74e59f7d2406684b34c5c25a3",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P03_chest_skeleton.step",
+      "source": "R1/output/parts/P03_chest_skeleton.step",
+      "bytes": 72447,
+      "sha256": "bb49a2ab1a8b21d343e6f8cb65c7eb0dd22e0f7ac80992f80406ad0cff2a2511",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P03_chest_skeleton.stl",
+      "source": "R1/output/parts/P03_chest_skeleton.stl",
+      "bytes": 161884,
+      "sha256": "cdcd8d3135d371fb3cc5b9039c00cd20468237246368c51993c2c5268c5ba0ce",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P04_pumpkin_imp_shell.step",
+      "source": "R1/output/parts/P04_pumpkin_imp_shell.step",
+      "bytes": 708568,
+      "sha256": "c0051c1711e2af211b3f4be9271377d841b27f5204d157f94cd92ae7da5097d3",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P04_pumpkin_imp_shell.stl",
+      "source": "R1/output/parts/P04_pumpkin_imp_shell.stl",
+      "bytes": 352984,
+      "sha256": "c343c5ddaf33eac76fd5e62c016423c8f636a80ade12232ef7871a210e26b36a",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P05_OV2710_camera_cradle_R1a_header_open.step",
+      "source": "R1/camera_header_fix_20261001/parts/P05_OV2710_camera_cradle_R1a_header_open.step",
+      "bytes": 50172,
+      "sha256": "c9601ddb0afaf65e8e9251db6b56f4075f78161df151d17cf891a817694aecc9",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P05_OV2710_camera_cradle_R1a_header_open.stl",
+      "source": "R1/camera_header_fix_20261001/parts/P05_OV2710_camera_cradle_R1a_header_open.stl",
+      "bytes": 145884,
+      "sha256": "cc3a1d6b1239805ef46930f01e13ddc7c0209f76c1c2c8fbbc1d2fc344813f3e",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P06_CI1302_R1b_flat_foam_plate.step",
+      "source": "R1/voice_adhesive_fix_20261001/parts/P06_CI1302_R1b_flat_foam_plate.step",
+      "bytes": 37747,
+      "sha256": "6a37d4f62ccad2040c1c946aadcc2977a11ee7adf4b8f893c6045981f47a226f",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P06_CI1302_R1b_flat_foam_plate.stl",
+      "source": "R1/voice_adhesive_fix_20261001/parts/P06_CI1302_R1b_flat_foam_plate.stl",
+      "bytes": 90284,
+      "sha256": "88ae7418355e8be0e0986b9932a409fffe7af636d0eb334378d06876ac1af18e",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P08_LED_keeper_left.step",
+      "source": "R1/output/parts/P08_LED_keeper_left.step",
+      "bytes": 13819,
+      "sha256": "16b89bca2a03436c4e403b8d3c3727602a4ae14ccbc3ead4545347a47c99ca3c",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P08_LED_keeper_left.stl",
+      "source": "R1/output/parts/P08_LED_keeper_left.stl",
+      "bytes": 15884,
+      "sha256": "c948afa79c9b1dc84f9b6339a9b9e9c3fc3db64a1444013a39e5fefcdecd78ae",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P08_LED_keeper_right.step",
+      "source": "R1/output/parts/P08_LED_keeper_right.step",
+      "bytes": 13824,
+      "sha256": "f196517f328fcde0dd60d54e304416004497111f2327227d5f3b68827178fb03",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    },
+    {
+      "file": "P08_LED_keeper_right.stl",
+      "source": "R1/output/parts/P08_LED_keeper_right.stl",
+      "bytes": 15884,
+      "sha256": "8d544e38cc4c94bef39e25d3d04cce06ac2da7940b0c36312ebb210cf9e24e26",
+      "license": "CC-BY-NC-SA-4.0",
+      "geometry_modified_during_closeout": false
+    }
+  ]
+}

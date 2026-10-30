@@ -1,0 +1,69 @@
+{
+  "schema": "pumpkin-duck-closeout-v1",
+  "project": "Pumpkin Duck Garden",
+  "closed_on": "2026-10-30",
+  "status": "CLOSED_ARCHIVED",
+  "further_development_scheduled": false,
+  "creator": "Lingxuan Zhou / 周苓萱 (CanNyCat)",
+  "scope": "Halloween side project only; main RDK Duck remains separate and active",
+  "mask": {
+    "physical_attachment_and_hardware": "assembled_photographed",
+    "vision_software": "unfinished",
+    "speech_software": "unfinished",
+    "coordinated_light_head_voice_response": "unfinished"
+  },
+  "garden": {
+    "physical_modules": "printed_and_assembled_with_remaining_integration_issues",
+    "desktop_servo_ids": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "retained_kw11": 1,
+    "handshake_leaf_kw11": "dropped",
+    "drive_side_and_connector_clearance": "unresolved",
+    "physical_complete_interaction": "not_validated"
+  },
+  "digital_archive": {
+    "version": "R5 Trained Overlay18, 2026-10-14",
+    "binary_sha256": "ea1784bd33a1f44e01da3ba4b8768251caefb41e8bf7116c29303ed3cacf678c",
+    "motion_library_sha256": "8a45eebb49017a24568ad930f117c52522b71eb7b1664b5d9fc339e2cf42efcf",
+    "qualified_nominal_recordings": 13,
+    "Windows_physics_cases_passed": 13,
+    "cross_platform_witnesses": 900,
+    "perturbation_passed": 93,
+    "perturbation_total": 100,
+    "unified_live_controller_qualified": false,
+    "hardware_deployment_allowed": false,
+    "live_policy_inference": false,
+    "character_displacement": "game_controlled",
+    "motion_interface": "physics_rollout_replay",
+    "V1_complete_cycles": 3,
+    "V2_scenarios": [
+      "normal",
+      "reroute",
+      "wait",
+      "occluded",
+      "missing"
+    ],
+    "user_subjective_acceptance": "PENDING",
+    "performance_scope": "RTX4050 DX12 offscreen,1080 output/internal85; no window/swapchain",
+    "V1_retained_seconds": 615.008513,
+    "V1_mean_FPS": 68.52425472035702,
+    "V2_missing_mean_FPS": 44.80222310404582,
+    "all_scene_stable60_accepted": false,
+    "retested_during_closeout": false
+  },
+  "unfinished_extensions": "EXTENSIONS.md",
+  "automation": {
+    "id": "ue5-30",
+    "status": "PAUSED",
+    "development_restarted": false
+  },
+  "physical_io_during_closeout": false,
+  "new_training_during_closeout": false,
+  "new_printing_during_closeout": false,
+  "main_fixed_release_modified": false
+}

@@ -19,6 +19,10 @@
 
 **[阅读24章完整复刻手册](docs/FULL_SOLUTION.md) · [下载固定版本 v2026.10.27.1](https://github.com/Xiaomiju-x/rdk-x5-microduck/releases/tag/v2026.10.27.1) · [地瓜社区主帖](https://forum.d-robotics.cc/t/topic/35728/1)**
 
+## 南瓜鸭活动副线已结项 · 2026-10-30
+
+**[南瓜鸭 · Pumpkin Duck Garden 结项档案](projects/pumpkin-duck/README.md)**：保留白色南瓜面具、实物瓜园、Web / UE5 展示与面具 STEP/STL 快照。视觉/语音软件、桌面机械驱动适配和全场实物互动未完成；[面具用途与瓜园互动拓展](projects/pumpkin-duck/EXTENSIONS.md)仅作设计留档，不再安排后续开发。本体主线按当前电源、结构与行走路线继续，既有固定 Release 不变。
+
 ## 历史进展 · 2026-10-27
 
 **单电池供电启动已实测：** 复用现有成品5V舵机电池，经微雪DC+/DC−分供，X5和15个舵机均能正常供电、启动；暂不增加降压或稳压模块。[本次进度](progress/2026-10-27/README.md) · [接线与R9布局](docs/SINGLE_POWER_R9.md)
@@ -85,7 +89,7 @@ python app.py --demo --port 9194
 
 ## 社区与来源
 
-在团队支持下，**CanNyCat（Xiaomiju-x）主导项目推进与实机集成**。RDK X5 Duck是主线，陆吾XGO-Duck和南瓜鸭分别作为平台对照与外观互动副线。欢迎通过[地瓜社区](https://forum.d-robotics.cc/t/topic/35728/1)交流，或通过[Issues](https://github.com/Xiaomiju-x/rdk-x5-microduck/issues/new/choose)提交复刻记录和改进。
+在团队支持下，**CanNyCat（Xiaomiju-x）主导项目推进与实机集成**。RDK X5 Duck是主线，陆吾XGO-Duck作为平台对照；[南瓜鸭外观互动副线](projects/pumpkin-duck/README.md)已于2026-10-30结项，未完成拓展仅保留设计。欢迎通过[地瓜社区](https://forum.d-robotics.cc/t/topic/35728/1)交流，或通过[Issues](https://github.com/Xiaomiju-x/rdk-x5-microduck/issues/new/choose)提交复刻记录和改进。
 
 项目基于[Pollen Robotics Microduck](https://github.com/pollen-robotics/microduck)、[Microduck RL](https://github.com/pollen-robotics/microduck_rl)、[机械行者Robo / fanhao375 FT CAD](https://github.com/fanhao375/microduck-replica-cad)等开源成果。新增软件Apache-2.0；机械与相应媒体按CC BY-NC-SA4.0等分类许可使用，详见[NOTICE](NOTICE.md)。
 
