@@ -1,6 +1,6 @@
 {
   "release": "2026-10-27",
-  "revision": "main-power-upgrade-procurement-20261030",
+  "revision": "main-wechat-community-20261030",
   "fixed_runtime_mechanical_baseline": "v2026.10.27.1",
   "algorithm": "sha256",
   "files": {
@@ -20,7 +20,7 @@
     "LICENSE": "48a029ca4cffafe32428e9f7d3f6a54ce637fac5327a9ccf88c93cb3c40e5a8a",
     "NOTICE.md": "89d776ee8f7e2c87a18ba921cdc4c57af246657e7117b098aea0ddd8fa4e50a0",
     "PITFALLS.md": "562608e3665aee1766cfa95a6fb74ccd93593d4f9268b66e39ad10221d209a55",
-    "README.md": "dd803698dcad2485864231990afecf93652c7edf79557bfccd8a9db0551bcfcd",
+    "README.md": "30dfd8401cc32117fbec9cfe82ffb24dccb7e50d1aa4a09a6d2e25d07030e704",
     "RELEASE.md": "207181920683bf397dc4f87ec43f6f13b1aa0706ed9e5ef46c082fa82ff385f3",
     "ROADMAP.md": "10843d1e2c97532652312dd6916344e46198abffe1b53cbf4d5e74a6f23667ba",
     "SIMULATION.md": "26da45c7f4a8aabd5121143a131623af63d5f9f5da7f19ff705f3fe4a1a1e5d8",
@@ -198,6 +198,7 @@
     "software/web/index.html": "1cf710e8c32a302dedeb90fdecac151f20c4e12f7d02571d8404135c1ccf9094",
     "software/web/style.css": "94a55927346194d8f25f3fff22025f70c24e9e6465894ef124dccef0c190964e",
     "test_public.py": "95a9b14df1dcf4c4356881fbcb4d6a9a08aaa48cced340bc1aeb7c7f1d634cf5",
-    "progress/2026-10-30/README.md": "e38c771979994dd8d4013f18e9c1f74dd6fee276ebbed2478982765e0d2b4b8b"
+    "progress/2026-10-30/README.md": "e38c771979994dd8d4013f18e9c1f74dd6fee276ebbed2478982765e0d2b4b8b",
+    "docs/images/wechat-group-20261030.png": "86f8eab9c7931e9c7d61c4beb0d3ad9a3061d7c3393171725a56ac730860d04a"
   }
 }
